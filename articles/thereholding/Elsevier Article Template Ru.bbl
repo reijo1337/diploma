@@ -1,0 +1,11 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Sobel(2014)}]{Sobel}
+Sobel, I., 02 2014. An isotropic 3x3 image gradient operator. Presentation at
+  Stanford A.I. Project 1968.
+
+\end{thebibliography}
