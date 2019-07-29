@@ -1,46 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Elsevier Article Template Ru.aux
-The style file: elsarticle-harv-ru.bst
+The style file: unsrt.bst
 Database file #1: biblio.bib
-You've used 1 entry,
-            2821 wiz_defined-function locations,
-            638 strings with 5000 characters,
-and the built_in function-call counts, 357 in all, are:
-= -- 34
-> -- 10
+Warning--empty publisher in Roberts
+You've used 4 entries,
+            1791 wiz_defined-function locations,
+            474 strings with 4025 characters,
+and the built_in function-call counts, 801 in all, are:
+= -- 72
+> -- 16
 < -- 1
-+ -- 6
-- -- 3
-* -- 21
-:= -- 73
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 6
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 15
-empty$ -- 26
++ -- 8
+- -- 4
+* -- 43
+:= -- 127
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 43
+empty$ -- 86
 format.name$ -- 4
-if$ -- 66
-int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 10
+if$ -- 183
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 5
+newline$ -- 23
 num.names$ -- 4
-pop$ -- 5
+pop$ -- 15
 preamble$ -- 1
-purify$ -- 5
+purify$ -- 0
 quote$ -- 0
-skip$ -- 15
+skip$ -- 20
 stack$ -- 0
-substring$ -- 13
-swap$ -- 2
-text.length$ -- 0
+substring$ -- 50
+swap$ -- 11
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 9
-warning$ -- 0
-while$ -- 3
-width$ -- 0
-write$ -- 16
+type$ -- 0
+warning$ -- 1
+while$ -- 7
+width$ -- 5
+write$ -- 43
+(There was 1 warning)

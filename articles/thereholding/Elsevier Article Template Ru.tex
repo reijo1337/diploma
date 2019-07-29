@@ -16,12 +16,17 @@
 %% version 1999/12/01 or later.
 %%
 
-\documentclass[3p,11pt,authoryear]{elsarticle-ru}
+\documentclass[3p,11pt]{elsarticle-ru}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{epstopdf,cmap,amssymb,amsfonts,amsmath,mathtext,enumerate,float,natbib,indentfirst,hyperref,graphicx,multirow,setspace}
 \usepackage{listings}
+
+% псевдокод
+\usepackage{algorithm2e}
+
+\SetAlgorithmName{Алгоритм}{алгоритм}{Список алгоритмов}
 
 % pscyr used for good quality russian font rendering. See http://blog.harrix.org/?p=444 for the full installing instruction of pscyr. 
 %\usepackage{pscyr}
@@ -53,6 +58,8 @@
 \input{chapters/ru/Introduction}
 
 \input{chapters/ru/Edge}
+
+\input{chapters/ru/Threholding}
 
 \input{chapters/ru/Methodology}
 
