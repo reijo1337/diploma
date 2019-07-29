@@ -22,4 +22,19 @@ John Canny.
 \newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
   on}, PAMI-8:679 -- 698, 12 1986.
 
+\bibitem{Phung}
+S.L. Phung, Abdesselam Bouzerdoum, and Douglas Chai.
+\newblock Skin segmentation using color and edge information.
+\newblock pages 525 -- 528 vol.1, 08 2003.
+
+\bibitem{Siddharth}
+Joshi Siddharth and Srivastava Gaurav.
+\newblock Face detection.
+\newblock {\em E368: Digital Image Processing}, pages 101 -- 112, 2003.
+
+\bibitem{DIP}
+Rafael~C. Gonzalez and Richard~E. Woods.
+\newblock {\em Digital Image Processing}.
+\newblock Pearson Prentice Hall, third edition, 2008.
+
 \end{thebibliography}

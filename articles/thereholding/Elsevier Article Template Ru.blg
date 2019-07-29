@@ -4,45 +4,46 @@ The top-level auxiliary file: Elsevier Article Template Ru.aux
 The style file: unsrt.bst
 Database file #1: biblio.bib
 Warning--empty publisher in Roberts
-You've used 4 entries,
+Warning--empty booktitle in Phung
+You've used 7 entries,
             1791 wiz_defined-function locations,
-            474 strings with 4025 characters,
-and the built_in function-call counts, 801 in all, are:
-= -- 72
-> -- 16
-< -- 1
-+ -- 8
-- -- 4
-* -- 43
-:= -- 127
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 3
+            496 strings with 4398 characters,
+and the built_in function-call counts, 1779 in all, are:
+= -- 168
+> -- 43
+< -- 3
++ -- 18
+- -- 11
+* -- 95
+:= -- 252
+add.period$ -- 21
+call.type$ -- 7
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 43
-empty$ -- 86
-format.name$ -- 4
-if$ -- 183
+cite$ -- 9
+duplicate$ -- 95
+empty$ -- 182
+format.name$ -- 11
+if$ -- 426
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 5
-newline$ -- 23
-num.names$ -- 4
-pop$ -- 15
+int.to.str$ -- 7
+missing$ -- 9
+newline$ -- 38
+num.names$ -- 7
+pop$ -- 31
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 20
+skip$ -- 61
 stack$ -- 0
-substring$ -- 50
-swap$ -- 11
-text.length$ -- 1
+substring$ -- 140
+swap$ -- 36
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 7
-width$ -- 5
-write$ -- 43
-(There was 1 warning)
+warning$ -- 2
+while$ -- 14
+width$ -- 8
+write$ -- 75
+(There were 2 warnings)
