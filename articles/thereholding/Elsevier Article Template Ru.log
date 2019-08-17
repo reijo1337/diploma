@@ -1,11 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.25)  29 JUL 2019 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.12.15)  18 AUG 2019 00:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"Elsevier Article Template Ru.tex"
 (./Elsevier Article Template Ru.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+LaTeX2e <2018-04-01> patch level 5
 (./elsarticle-ru.cls
 Document Class: elsarticle-ru 2009/09/17, 1.2.0: Elsevier Ltd
 \@bls=\dimen102
@@ -14,14 +13,14 @@ Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen103
@@ -51,323 +50,10 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@width=\dimen105
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-Now handling font encoding OML ...
-... no UTF-8 mapping file for font encoding OML
-Now handling font encoding T1 ...
-... processing UTF-8 mapping file for font encoding T1
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C0 (decimal 192)
-   defining Unicode char U+00C1 (decimal 193)
-   defining Unicode char U+00C2 (decimal 194)
-   defining Unicode char U+00C3 (decimal 195)
-   defining Unicode char U+00C4 (decimal 196)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00C7 (decimal 199)
-   defining Unicode char U+00C8 (decimal 200)
-   defining Unicode char U+00C9 (decimal 201)
-   defining Unicode char U+00CA (decimal 202)
-   defining Unicode char U+00CB (decimal 203)
-   defining Unicode char U+00CC (decimal 204)
-   defining Unicode char U+00CD (decimal 205)
-   defining Unicode char U+00CE (decimal 206)
-   defining Unicode char U+00CF (decimal 207)
-   defining Unicode char U+00D0 (decimal 208)
-   defining Unicode char U+00D1 (decimal 209)
-   defining Unicode char U+00D2 (decimal 210)
-   defining Unicode char U+00D3 (decimal 211)
-   defining Unicode char U+00D4 (decimal 212)
-   defining Unicode char U+00D5 (decimal 213)
-   defining Unicode char U+00D6 (decimal 214)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00D9 (decimal 217)
-   defining Unicode char U+00DA (decimal 218)
-   defining Unicode char U+00DB (decimal 219)
-   defining Unicode char U+00DC (decimal 220)
-   defining Unicode char U+00DD (decimal 221)
-   defining Unicode char U+00DE (decimal 222)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E0 (decimal 224)
-   defining Unicode char U+00E1 (decimal 225)
-   defining Unicode char U+00E2 (decimal 226)
-   defining Unicode char U+00E3 (decimal 227)
-   defining Unicode char U+00E4 (decimal 228)
-   defining Unicode char U+00E5 (decimal 229)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00E7 (decimal 231)
-   defining Unicode char U+00E8 (decimal 232)
-   defining Unicode char U+00E9 (decimal 233)
-   defining Unicode char U+00EA (decimal 234)
-   defining Unicode char U+00EB (decimal 235)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F0 (decimal 240)
-   defining Unicode char U+00F1 (decimal 241)
-   defining Unicode char U+00F2 (decimal 242)
-   defining Unicode char U+00F3 (decimal 243)
-   defining Unicode char U+00F4 (decimal 244)
-   defining Unicode char U+00F5 (decimal 245)
-   defining Unicode char U+00F6 (decimal 246)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+00F9 (decimal 249)
-   defining Unicode char U+00FA (decimal 250)
-   defining Unicode char U+00FB (decimal 251)
-   defining Unicode char U+00FC (decimal 252)
-   defining Unicode char U+00FD (decimal 253)
-   defining Unicode char U+00FE (decimal 254)
-   defining Unicode char U+00FF (decimal 255)
-   defining Unicode char U+0100 (decimal 256)
-   defining Unicode char U+0101 (decimal 257)
-   defining Unicode char U+0102 (decimal 258)
-   defining Unicode char U+0103 (decimal 259)
-   defining Unicode char U+0104 (decimal 260)
-   defining Unicode char U+0105 (decimal 261)
-   defining Unicode char U+0106 (decimal 262)
-   defining Unicode char U+0107 (decimal 263)
-   defining Unicode char U+0108 (decimal 264)
-   defining Unicode char U+0109 (decimal 265)
-   defining Unicode char U+010A (decimal 266)
-   defining Unicode char U+010B (decimal 267)
-   defining Unicode char U+010C (decimal 268)
-   defining Unicode char U+010D (decimal 269)
-   defining Unicode char U+010E (decimal 270)
-   defining Unicode char U+010F (decimal 271)
-   defining Unicode char U+0110 (decimal 272)
-   defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0112 (decimal 274)
-   defining Unicode char U+0113 (decimal 275)
-   defining Unicode char U+0114 (decimal 276)
-   defining Unicode char U+0115 (decimal 277)
-   defining Unicode char U+0116 (decimal 278)
-   defining Unicode char U+0117 (decimal 279)
-   defining Unicode char U+0118 (decimal 280)
-   defining Unicode char U+0119 (decimal 281)
-   defining Unicode char U+011A (decimal 282)
-   defining Unicode char U+011B (decimal 283)
-   defining Unicode char U+011C (decimal 284)
-   defining Unicode char U+011D (decimal 285)
-   defining Unicode char U+011E (decimal 286)
-   defining Unicode char U+011F (decimal 287)
-   defining Unicode char U+0120 (decimal 288)
-   defining Unicode char U+0121 (decimal 289)
-   defining Unicode char U+0122 (decimal 290)
-   defining Unicode char U+0123 (decimal 291)
-   defining Unicode char U+0124 (decimal 292)
-   defining Unicode char U+0125 (decimal 293)
-   defining Unicode char U+0128 (decimal 296)
-   defining Unicode char U+0129 (decimal 297)
-   defining Unicode char U+012A (decimal 298)
-   defining Unicode char U+012B (decimal 299)
-   defining Unicode char U+012C (decimal 300)
-   defining Unicode char U+012D (decimal 301)
-   defining Unicode char U+012E (decimal 302)
-   defining Unicode char U+012F (decimal 303)
-   defining Unicode char U+0130 (decimal 304)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0132 (decimal 306)
-   defining Unicode char U+0133 (decimal 307)
-   defining Unicode char U+0134 (decimal 308)
-   defining Unicode char U+0135 (decimal 309)
-   defining Unicode char U+0136 (decimal 310)
-   defining Unicode char U+0137 (decimal 311)
-   defining Unicode char U+0139 (decimal 313)
-   defining Unicode char U+013A (decimal 314)
-   defining Unicode char U+013B (decimal 315)
-   defining Unicode char U+013C (decimal 316)
-   defining Unicode char U+013D (decimal 317)
-   defining Unicode char U+013E (decimal 318)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0143 (decimal 323)
-   defining Unicode char U+0144 (decimal 324)
-   defining Unicode char U+0145 (decimal 325)
-   defining Unicode char U+0146 (decimal 326)
-   defining Unicode char U+0147 (decimal 327)
-   defining Unicode char U+0148 (decimal 328)
-   defining Unicode char U+014A (decimal 330)
-   defining Unicode char U+014B (decimal 331)
-   defining Unicode char U+014C (decimal 332)
-   defining Unicode char U+014D (decimal 333)
-   defining Unicode char U+014E (decimal 334)
-   defining Unicode char U+014F (decimal 335)
-   defining Unicode char U+0150 (decimal 336)
-   defining Unicode char U+0151 (decimal 337)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0154 (decimal 340)
-   defining Unicode char U+0155 (decimal 341)
-   defining Unicode char U+0156 (decimal 342)
-   defining Unicode char U+0157 (decimal 343)
-   defining Unicode char U+0158 (decimal 344)
-   defining Unicode char U+0159 (decimal 345)
-   defining Unicode char U+015A (decimal 346)
-   defining Unicode char U+015B (decimal 347)
-   defining Unicode char U+015C (decimal 348)
-   defining Unicode char U+015D (decimal 349)
-   defining Unicode char U+015E (decimal 350)
-   defining Unicode char U+015F (decimal 351)
-   defining Unicode char U+0160 (decimal 352)
-   defining Unicode char U+0161 (decimal 353)
-   defining Unicode char U+0162 (decimal 354)
-   defining Unicode char U+0163 (decimal 355)
-   defining Unicode char U+0164 (decimal 356)
-   defining Unicode char U+0165 (decimal 357)
-   defining Unicode char U+0168 (decimal 360)
-   defining Unicode char U+0169 (decimal 361)
-   defining Unicode char U+016A (decimal 362)
-   defining Unicode char U+016B (decimal 363)
-   defining Unicode char U+016C (decimal 364)
-   defining Unicode char U+016D (decimal 365)
-   defining Unicode char U+016E (decimal 366)
-   defining Unicode char U+016F (decimal 367)
-   defining Unicode char U+0170 (decimal 368)
-   defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0172 (decimal 370)
-   defining Unicode char U+0173 (decimal 371)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0178 (decimal 376)
-   defining Unicode char U+0179 (decimal 377)
-   defining Unicode char U+017A (decimal 378)
-   defining Unicode char U+017B (decimal 379)
-   defining Unicode char U+017C (decimal 380)
-   defining Unicode char U+017D (decimal 381)
-   defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+01CD (decimal 461)
-   defining Unicode char U+01CE (decimal 462)
-   defining Unicode char U+01CF (decimal 463)
-   defining Unicode char U+01D0 (decimal 464)
-   defining Unicode char U+01D1 (decimal 465)
-   defining Unicode char U+01D2 (decimal 466)
-   defining Unicode char U+01D3 (decimal 467)
-   defining Unicode char U+01D4 (decimal 468)
-   defining Unicode char U+01E2 (decimal 482)
-   defining Unicode char U+01E3 (decimal 483)
-   defining Unicode char U+01E6 (decimal 486)
-   defining Unicode char U+01E7 (decimal 487)
-   defining Unicode char U+01E8 (decimal 488)
-   defining Unicode char U+01E9 (decimal 489)
-   defining Unicode char U+01EA (decimal 490)
-   defining Unicode char U+01EB (decimal 491)
-   defining Unicode char U+01F0 (decimal 496)
-   defining Unicode char U+01F4 (decimal 500)
-   defining Unicode char U+01F5 (decimal 501)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+0232 (decimal 562)
-   defining Unicode char U+0233 (decimal 563)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201A (decimal 8218)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+1E20 (decimal 7712)
-   defining Unicode char U+1E21 (decimal 7713)
 )
-Now handling font encoding OT1 ...
-... processing UTF-8 mapping file for font encoding OT1
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00B8 (decimal 184)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-)
-Now handling font encoding OMS ...
-... processing UTF-8 mapping file for font encoding OMS
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-)
-Now handling font encoding OMX ...
-... no UTF-8 mapping file for font encoding OMX
-Now handling font encoding U ...
-... no UTF-8 mapping file for font encoding U
-   defining Unicode char U+00A9 (decimal 169)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+02C6 (decimal 710)
-   defining Unicode char U+02DC (decimal 732)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2026 (decimal 8230)
-   defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2423 (decimal 9251)
-))
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
@@ -380,13 +66,13 @@ LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-\c@tnote=\count87
-\c@fnote=\count88
-\c@cnote=\count89
-\c@ead=\count90
-\c@author=\count91
+\c@tnote=\count88
+\c@fnote=\count89
+\c@cnote=\count90
+\c@ead=\count91
+\c@author=\count92
 \@eadauthor=\toks17
-\c@affn=\count92
+\c@affn=\count93
 \absbox=\box26
 \keybox=\box27
 \Columnwidth=\dimen106
@@ -404,17 +90,17 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count93
+\c@NAT@ctr=\count94
 )
 \splwrite=\write3
 \openout3 = `"Elsevier Article Template Ru.spl"'.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+Package: geometry 2018/04/16 v5.8 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
@@ -423,9 +109,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count94
-\Gm@cntv=\count95
-\c@Gm@tempcnt=\count96
+\Gm@cnth=\count95
+\Gm@cntv=\count96
+\c@Gm@tempcnt=\count97
 \Gm@bindingoffset=\dimen109
 \Gm@wd@mp=\dimen110
 \Gm@odd@mp=\dimen111
@@ -445,7 +131,7 @@ Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t2aenc.dfu
-File: t2aenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+File: t2aenc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00AB (decimal 171)
@@ -640,21 +326,21 @@ LaTeX Font Info:    Try loading font information for T2A+cmr on input line 105.
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/02/14 3.18 The Babel package
+Package: babel 2018/10/16 3.26 The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/02/14 3.18 Babel switching mechanism
+File: switch.def 2018/10/16 3.26 Babel switching mechanism
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
 Language: russian 2017/08/12 1.3j Russian support for the Babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count97
+File: babel.def 2018/10/16 3.26 Babel common definitions
+\babel@savecnt=\count98
 \U@D=\dimen117
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count98
+\bbl@dirlevel=\count99
 )
 Package babel Info: Making " an active character on input line 120.
 Package babel Info: Default for \cyrdash is provided on input line 157.
@@ -689,14 +375,9 @@ Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
+))))
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -751,13 +432,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count99
+\inf@bad=\count100
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count100
-\leftroot@=\count101
+\uproot@=\count101
+\leftroot@=\count102
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count102
-\DOTSCASE@=\count103
+\classnum@=\count103
+\DOTSCASE@=\count104
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -766,15 +447,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen120
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count104
-\c@MaxMatrixCols=\count105
+\macc@depth=\count105
+\c@MaxMatrixCols=\count106
 \dotsspace@=\muskip10
-\c@parentequation=\count106
-\dspbrk@lvl=\count107
+\c@parentequation=\count107
+\dspbrk@lvl=\count108
 \tag@help=\toks22
-\row@=\count108
-\column@=\count109
-\maxfields@=\count110
+\row@=\count109
+\column@=\count110
+\maxfields@=\count111
 \andhelp@=\toks23
 \eqnshift@=\dimen121
 \alignsep@=\dimen122
@@ -790,8 +471,8 @@ LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/t2/mathtext.sty
-Package: mathtext 1999/01/28 v1.0 transparent text-and-math defs
-LaTeX Info: Redefining \halign on input line 111.
+Package: mathtext 2018/04/14 v1.0 transparent text-and-math defs
+LaTeX Info: Redefining \halign on input line 121.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
@@ -799,7 +480,7 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count111
+\c@float@type=\count112
 \float@exts=\toks27
 \float@box=\box32
 \@float@everytoks=\toks28
@@ -809,7 +490,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -848,60 +529,64 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen127
-\Hy@linkcounter=\count112
-\Hy@pagecounter=\count113
+\Hy@linkcounter=\count113
+\Hy@pagecounter=\count114
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 \symPD1letters=\mathgroup6
 )
-\Hy@SavedSpaceFactor=\count114
-Package hyperref Info: Option `unicode' set `true' on input line 3456.
+\Hy@SavedSpaceFactor=\count115
+Package hyperref Info: Option `unicode' set `true' on input line 3475.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2018/09/30 v6.88a Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
 \symPUletters=\mathgroup7
 )
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4509.
-Package hyperref Info: Link nesting OFF on input line 4514.
-Package hyperref Info: Hyper index ON on input line 4517.
-Package hyperref Info: Plain pages OFF on input line 4524.
-Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Hyper figures OFF on input line 4535.
+Package hyperref Info: Link nesting OFF on input line 4540.
+Package hyperref Info: Hyper index ON on input line 4543.
+Package hyperref Info: Plain pages OFF on input line 4550.
+Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count115
+Package hyperref Info: Bookmarks ON on input line 4788.
+\c@Hy@tempcnt=\count116
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5115.
+LaTeX Info: Redefining \url on input line 5141.
 \XeTeXLinkMargin=\dimen128
-\Fld@menulength=\count116
+\Fld@menulength=\count117
 \Field@Width=\dimen129
 \Fld@charsize=\dimen130
-Package hyperref Info: Hyper figures OFF on input line 6369.
-Package hyperref Info: Link nesting OFF on input line 6374.
-Package hyperref Info: Hyper index ON on input line 6377.
-Package hyperref Info: backreferencing OFF on input line 6384.
-Package hyperref Info: Link coloring OFF on input line 6389.
-Package hyperref Info: Link coloring with OCG OFF on input line 6394.
-Package hyperref Info: PDF/A mode OFF on input line 6399.
-LaTeX Info: Redefining \ref on input line 6439.
-LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count117
-\c@Item=\count118
-\c@Hfootnote=\count119
+Package hyperref Info: Hyper figures OFF on input line 6396.
+Package hyperref Info: Link nesting OFF on input line 6401.
+Package hyperref Info: Hyper index ON on input line 6404.
+Package hyperref Info: backreferencing OFF on input line 6411.
+Package hyperref Info: Link coloring OFF on input line 6416.
+Package hyperref Info: Link coloring with OCG OFF on input line 6421.
+Package hyperref Info: PDF/A mode OFF on input line 6426.
+LaTeX Info: Redefining \ref on input line 6466.
+LaTeX Info: Redefining \pageref on input line 6470.
+\Hy@abspage=\count118
+\c@Item=\count119
+\c@Hfootnote=\count120
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count120
-\c@bookmark@seq@number=\count121
+File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
+\Fld@listcount=\count121
+\c@bookmark@seq@number=\count122
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -911,9 +596,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip50
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
 \multirow@colwidth=\skip51
-\multirow@cntb=\count122
+\multirow@cntb=\count123
 \multirow@dima=\skip52
 \bigstrutjot=\dimen131
 )
@@ -921,33 +606,33 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count123
+\lst@mode=\count124
 \lst@gtempboxa=\box34
 \lst@token=\toks29
-\lst@length=\count124
+\lst@length=\count125
 \lst@currlwidth=\dimen132
-\lst@column=\count125
-\lst@pos=\count126
+\lst@column=\count126
+\lst@pos=\count127
 \lst@lostspace=\dimen133
 \lst@width=\dimen134
-\lst@newlines=\count127
-\lst@lineno=\count128
+\lst@newlines=\count128
+\lst@lineno=\count129
 \lst@maxwidth=\dimen135
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count129
-\lst@skipnumbers=\count130
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+\c@lstnumber=\count130
+\lst@skipnumbers=\count131
 \lst@framebox=\box35
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2015/06/04 1.6 listings configuration
+File: listings.cfg 2018/09/02 1.7 listings configuration
 ))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
+Package: listings 2018/09/02 1.7 (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count131
+\c@AlgoLine=\count132
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -956,7 +641,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count132
+\c@checkoddpage=\count133
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -994,9 +679,9 @@ Package: relsize 2013/03/29 ver 4.1
 \algoheightrule=\skip69
 \algotitleheightruledefault=\skip70
 \algotitleheightrule=\skip71
-\c@algocfline=\count133
-\c@algocfproc=\count134
-\c@algocf=\count135
+\c@algocfline=\count134
+\c@algocfproc=\count135
+\c@algocf=\count136
 \algocf@algoframe=\box42
 \algocf@algobox=\box43
 )
@@ -1036,16 +721,16 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count136
+\scratchcounter=\count137
 \scratchdimen=\dimen142
 \scratchbox=\box44
-\nofMPsegments=\count137
-\nofMParguments=\count138
+\nofMPsegments=\count138
+\nofMParguments=\count139
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count139
+\MPscratchCnt=\count140
 \MPscratchDim=\dimen143
-\MPnumerator=\count140
-\makeMPintoPDFobject=\count141
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
 \everyMPtoPDFconversion=\toks31
 )
 *geometry* driver: auto-detecting
@@ -1092,7 +777,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count142
+\c@section@level=\count143
 )
 LaTeX Info: Redefining \ref on input line 38.
 LaTeX Info: Redefining \pageref on input line 38.
@@ -1102,7 +787,7 @@ LaTeX Info: Redefining \nameref on input line 38.
 \@outlinefile=\write4
 \openout4 = `"Elsevier Article Template Ru.out"'.
 
-\c@lstlisting=\count143
+\c@lstlisting=\count144
 
 (./chapters/ru/Title.tex)<<t2a.cmap>> (./chapters/ru/Abstract.tex)
 (./chapters/ru/Keywords.tex)<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
@@ -1135,10 +820,6 @@ LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 55.
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 (./chapters/ru/Introduction.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -1147,29 +828,11 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 )
-(./chapters/ru/Edge.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 10.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 10.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 10.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 10.
- [1
+(./chapters/ru/Edge.tex [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 15.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 15.
-
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
+File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 36.
@@ -1189,28 +852,11 @@ Overfull \hbox (17.0pt too wide) detected at line 52
 [][] 
  []
 
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 57.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 57.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 57.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 57.
-[2]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 57.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 57.
- (./src/prewitt_matrix.py)
+[2] (./src/prewitt_matrix.py)
 Overfull \hbox (17.0pt too wide) detected at line 81
 [][] 
  []
 
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 84.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 84.
 (./src/roberts.py)
 Overfull \hbox (34.43468pt too wide) in paragraph at lines 13--103
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -1221,20 +867,7 @@ Overfull \hbox (17.0pt too wide) detected at line 106
 [][] 
  []
 
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 110.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 110.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 110.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 110.
 [3]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 112.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 112.
-
 Overfull \hbox (18.74902pt too wide) in paragraph at lines 130--131
 []\T2A/cmr/m/n/10.95 ƒл€ по-лу-че-ни€ раз-мы-то-го изоб-ра-же-ни€ мож-но ис-пол
 ь-зо-вать стан-дарт-ную функ-цию $\OML/cmm/m/it/10.95 convolve\PU/cmr/m/n/10.95
@@ -1251,14 +884,6 @@ Overfull \hbox (17.0pt too wide) detected at line 139
 [][] 
  []
 
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 142.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 142.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 142.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 142.
 [4] (./src/canny_threholding.py
 Overfull \hbox (8.30351pt too wide) in paragraph at lines 8--9
 [][][][][][][][][][][][][][][][][][][][][] 
@@ -1269,14 +894,6 @@ Overfull \hbox (17.0pt too wide) detected at line 149
 [][] 
  []
 
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 152.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 152.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 152.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 152.
 [5] (./src/canny_hysteresis.py
 Overfull \hbox (14.8363pt too wide) in paragraph at lines 11--12
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -1297,20 +914,7 @@ Overfull \hbox (17.0pt too wide) detected at line 159
 [][] 
  []
 
-) (./chapters/ru/Threholding.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 5.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 5.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 5.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 5.
- [6] (./src/color_filter.py
+) (./chapters/ru/Threholding.tex [6] (./src/color_filter.py
 Overfull \hbox (73.63142pt too wide) in paragraph at lines 6--7
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1335,130 +939,43 @@ Overfull \hbox (17.0pt too wide) detected at line 23
 [][] 
  []
 
-) (./chapters/ru/Skeleton.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1.
-) (./chapters/ru/Methodology.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 15.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 15.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 27.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 27.
- [7])
-(./chapters/ru/Data.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1.
-) (./chapters/ru/Results.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 26.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 26.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 54.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 54.
+) (./chapters/ru/Skeleton.tex) (./chapters/ru/Methodology.tex [7])
+(./chapters/ru/Data.tex) (./chapters/ru/Results.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package epstopdf Info: Source file: <figures/ru/Figure.eps>
-(epstopdf)                    date: 2016-12-20 20:28:36
+(epstopdf)                    date: 2019-08-14 20:55:58
 (epstopdf)                    size: 76282 bytes
 (epstopdf)             Output file: <figures/ru/Figure-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-12-20 20:28:36
+(epstopdf)                    date: 2019-08-14 20:55:58
 (epstopdf)                    size: 18071 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/ru/Figure-eps-conv
 erted-to.pdf figures/ru/Figure.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
-<figures/ru/Figure-eps-converted-to.pdf, id=299, 1195.46625pt x 556.0775pt>
+<figures/ru/Figure-eps-converted-to.pdf, id=303, 1195.46625pt x 556.0775pt>
 File: figures/ru/Figure-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/ru/Figure-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ru/Figure-eps-converted-to.pdf  used on input 
 line 59.
 (pdftex.def)             Requested size: 468.0pt x 217.6924pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/ru/Conclusion.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1.
-) (./chapters/ru/Acknowledgement.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 6.
- [8])
-(./chapters/ru/Appendix.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1.
-)
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 81.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 81.
- (./Elsevier Article Template Ru.bbl)
+) (./chapters/ru/Conclusion.tex) (./chapters/ru/Acknowledgement.tex) [8]
+(./chapters/ru/Appendix.tex) (./Elsevier Article Template Ru.bbl [9 <./figures/
+ru/Figure-eps-converted-to.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 85.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 85.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 85.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 85.
- [9 <./figures/ru/Figure-eps-converted-to.pdf>]
+ [10]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (./Elsevier Article Template Ru.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
+Package rerunfilecheck Info: File `"Elsevier Article Template Ru".out' has not 
+changed.
+(rerunfilecheck)             Checksum: 93B4D6673DFFA2EB3054EA9E8A240BCF;3711.
 
-
-Package rerunfilecheck Warning: File `"Elsevier Article Template Ru".out' has c
-hanged.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Elsevier Article Template Ru".out'
-:
-(rerunfilecheck)             Before: DC558571EC98030E6DE813C170215F39;3435
-(rerunfilecheck)             After:  93B4D6673DFFA2EB3054EA9E8A240BCF;3711.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1468,46 +985,31 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 15043 strings out of 492982
- 204528 string characters out of 6134896
- 338721 words of memory out of 5000000
- 18060 multiletter control sequences out of 15000+600000
+ 14732 strings out of 492638
+ 202102 string characters out of 6131709
+ 510451 words of memory out of 5000000
+ 18089 multiletter control sequences out of 15000+600000
  20152 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,43p,1150b,1480s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.6.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-frm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfti0600.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-ti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on "Elsevier Article Template Ru.pdf" (9 pages, 337829 bytes).
+ 42i,13n,43p,1150b,1478s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfti0600.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on "Elsevier Article Template Ru.pdf" (10 pages, 338655 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
- 380 compressed objects within 4 object streams
- 198 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 421 PDF objects out of 1000 (max. 8388607)
+ 383 compressed objects within 4 object streams
+ 194 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
