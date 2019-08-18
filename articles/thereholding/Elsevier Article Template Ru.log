@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.12.15)  18 AUG 2019 00:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.12.15)  18 AUG 2019 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -939,7 +939,7 @@ Overfull \hbox (17.0pt too wide) detected at line 23
 [][] 
  []
 
-) (./chapters/ru/Skeleton.tex) (./chapters/ru/Methodology.tex [7])
+) (./chapters/ru/Skeleton.tex) [7] (./chapters/ru/Methodology.tex)
 (./chapters/ru/Data.tex) (./chapters/ru/Results.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -954,7 +954,7 @@ Package epstopdf Info: Source file: <figures/ru/Figure.eps>
 erted-to.pdf figures/ru/Figure.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
-<figures/ru/Figure-eps-converted-to.pdf, id=303, 1195.46625pt x 556.0775pt>
+<figures/ru/Figure-eps-converted-to.pdf, id=304, 1195.46625pt x 556.0775pt>
 File: figures/ru/Figure-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/ru/Figure-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ru/Figure-eps-converted-to.pdf  used on input 
@@ -963,7 +963,7 @@ line 59.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/ru/Conclusion.tex) (./chapters/ru/Acknowledgement.tex) [8]
+) (./chapters/ru/Conclusion.tex) (./chapters/ru/Acknowledgement.tex [8])
 (./chapters/ru/Appendix.tex) (./Elsevier Article Template Ru.bbl [9 <./figures/
 ru/Figure-eps-converted-to.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
@@ -985,10 +985,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 14732 strings out of 492638
- 202102 string characters out of 6131709
- 510451 words of memory out of 5000000
- 18089 multiletter control sequences out of 15000+600000
+ 14736 strings out of 492638
+ 202143 string characters out of 6131709
+ 510466 words of memory out of 5000000
+ 18092 multiletter control sequences out of 15000+600000
  20152 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,13n,43p,1150b,1478s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1006,10 +1006,10 @@ ype1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super
 share/texmf/fonts/type1/public/cm-super/sfti0600.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/
 sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on "Elsevier Article Template Ru.pdf" (10 pages, 338655 bytes).
+Output written on "Elsevier Article Template Ru.pdf" (10 pages, 339414 bytes).
 PDF statistics:
- 421 PDF objects out of 1000 (max. 8388607)
- 383 compressed objects within 4 object streams
- 194 named destinations out of 1000 (max. 500000)
+ 423 PDF objects out of 1000 (max. 8388607)
+ 385 compressed objects within 4 object streams
+ 195 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,36 +5,37 @@ The style file: unsrt.bst
 Database file #1: biblio.bib
 Warning--empty publisher in Roberts
 Warning--empty booktitle in Phung
-You've used 7 entries,
+Warning--empty journal in DNN
+You've used 8 entries,
             1791 wiz_defined-function locations,
-            496 strings with 4398 characters,
-and the built_in function-call counts, 1779 in all, are:
-= -- 168
-> -- 43
+            502 strings with 4546 characters,
+and the built_in function-call counts, 1953 in all, are:
+= -- 179
+> -- 57
 < -- 3
-+ -- 18
-- -- 11
-* -- 95
-:= -- 252
-add.period$ -- 21
-call.type$ -- 7
-change.case$ -- 6
++ -- 23
+- -- 15
+* -- 107
+:= -- 284
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 95
-empty$ -- 182
-format.name$ -- 11
-if$ -- 426
+cite$ -- 11
+duplicate$ -- 103
+empty$ -- 196
+format.name$ -- 15
+if$ -- 461
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 9
-newline$ -- 38
-num.names$ -- 7
-pop$ -- 31
+int.to.str$ -- 8
+missing$ -- 10
+newline$ -- 43
+num.names$ -- 8
+pop$ -- 36
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 61
+skip$ -- 64
 stack$ -- 0
 substring$ -- 140
 swap$ -- 36
@@ -42,8 +43,8 @@ text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 14
-width$ -- 8
-write$ -- 75
-(There were 2 warnings)
+warning$ -- 3
+while$ -- 15
+width$ -- 9
+write$ -- 84
+(There were 3 warnings)

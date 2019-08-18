@@ -37,4 +37,10 @@ Rafael~C. Gonzalez and Richard~E. Woods.
 \newblock {\em Digital Image Processing}.
 \newblock Pearson Prentice Hall, third edition, 2008.
 
+\bibitem{DNN}
+Tomas Simon, Hanbyul Joo, Iain Matthews, and Yaser Sheikh.
+\newblock Hand keypoint detection in single images using multiview
+  bootstrapping.
+\newblock 04 2017.
+
 \end{thebibliography}
