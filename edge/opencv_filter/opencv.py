@@ -1,9 +1,12 @@
+import time
+
 import cv2
 import math
 import numpy as np
 
 
 def skel(orig_img):
+    start_time = time.time()
     img = cv2.cvtColor(orig_img, cv2.COLOR_BGR2GRAY)
     size = np.size(img)
     skel = np.zeros(img.shape, np.uint8)
@@ -28,7 +31,7 @@ def skel(orig_img):
             if (skel[i, j] == [255, 255, 255]).all():
                 skel[i, j] = [255, 0, 0]
                 orig_img[i, j] = [255, 0, 0]
-    return skel
+    return skel, time.time() - start_time
 
 
 def _ycc(r, g, b):
@@ -39,6 +42,7 @@ def _ycc(r, g, b):
 
 
 def opencv(hand):
+    start_time = time.time()
     imgYCC = cv2.cvtColor(hand, cv2.COLOR_BGR2YCR_CB)
     y, cb, cr = _ycc(53, 38, 31)
     avg_skin_color = [y, cb, cr]
@@ -56,7 +60,7 @@ def opencv(hand):
     kernel = np.ones((7, 7), np.uint8)
     imgYCC = cv2.dilate(imgYCC, kernel, iterations=1)
     imgYCC = cv2.erode(imgYCC, kernel, iterations=1)
-    return imgYCC
+    return imgYCC, time.time() - start_time
 
 
 def paln_point(hand):

@@ -3,6 +3,7 @@ Written in Python 2.7!
 This module takes an image and converts it to grayscale, then applies a
 Sobel operator.
 """
+import time
 
 __author__ = "Kevin Gay"
 
@@ -13,7 +14,7 @@ import math
 class Sobel(object):
 
     def __init__(self, im_path):
-
+        start_time = time.time()
         self.im = Image.open(im_path).convert('L')
         self.width, self.height = self.im.size
         mat = self.im.load()
@@ -38,6 +39,7 @@ class Sobel(object):
                         gy += sobely[i][j] * val
 
                 pixels[row+1, col+1] = int(math.sqrt(gx*gx + gy*gy))
+        self.sobel_time = time.time() - start_time
 
     def save_gray(self, name):
         self.im.save(name)

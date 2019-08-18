@@ -1,4 +1,7 @@
 from __future__ import division
+
+import time
+
 import cv2
 import numpy as np
 
@@ -11,6 +14,7 @@ net = cv2.dnn.readNetFromCaffe(protoFile, weightsFile)
 
 
 def skeleton(frame):
+    start_time = time.time()
     frame_copy = np.copy(frame)
     frame_width = frame.shape[1]
     frame_height = frame.shape[0]
@@ -53,7 +57,7 @@ def skeleton(frame):
             cv2.line(frame, points[part_a], points[partB], (0, 255, 255), 2)
             # cv2.circle(frame, points[part_a], 8, (0, 0, 255), thickness=-1, lineType=cv2.FILLED)
             # cv2.circle(frame, points[partB], 8, (0, 0, 255), thickness=-1, lineType=cv2.FILLED)
-    return frame
+    return frame, time.time() - start_time
 
 #
 # t = time.time()
