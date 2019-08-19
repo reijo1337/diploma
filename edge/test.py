@@ -126,7 +126,7 @@ class MyTestCase(unittest.TestCase):
             prewitt_times.append(prewitt.prewitt_time)
             sobel_times.append(sobel.sobel_time)
             openc_times.append(openc_time)
-            skel_opencv_times.append(skel_dnn_time)
+            skel_opencv_times.append(skel_opencv_time)
             skel_dnn_times.append(skel_dnn_time)
 
             figure(figsize=(20, 20))
