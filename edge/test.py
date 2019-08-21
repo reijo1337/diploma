@@ -3,18 +3,22 @@ import time
 import unittest
 import pandas as pd
 import matplotlib.image as mpimg
-from matplotlib.pyplot import imsave, gray, figure, subplot, imshow, savefig
+from matplotlib.pyplot import gray, figure, subplot, imshow, savefig, close
 import numpy as np
 import edge.canny_filter.canny_edge_detector as ced
 
 from edge.canny_filter.utils.utils import rgb2gray
-from edge.opencv_filter.opencv import opencv, paln_point, skel
+from edge.opencv_filter.opencv import opencv, skel
 from edge.skelet_dnn.main import skeleton
 from edge.sobel import Sobel
 from edge.prewitt import Prewitt
 from edge.roberts import Roberts
+from PIL import Image
 
-nothing_image_path = "../data/dataset/asl-alphabet/asl_alphabet_test/nothing_test.jpg"
+asl_dataset = "../data/dataset/asl-alphabet/asl_alphabet_test"
+datamix_dataset = "../data/dataset/data_mix_300/test"
+colombian_dataset = "../data/dataset/dataset/test"
+asl2_dataset = "../data/dataset/dataset5/test"
 
 
 def canny_func(frame):
@@ -30,82 +34,19 @@ def canny_func(frame):
 
 
 class MyTestCase(unittest.TestCase):
-    # def test_sobel(self):
-    #     print(f'SOBEL')
-    #     dataset_path = "../data/dataset/asl-alphabet/asl_alphabet_test"
-    #     output_path = "sobel"
-    #     if not os.path.exists(output_path):
-    #         os.makedirs(output_path)
-    #     for image in os.listdir(dataset_path):
-    #         print(f'Processing {image}')
-    #         out_name = image
-    #         sobel = Sobel(os.path.join(dataset_path, image))
-    #         sobel.save_im(os.path.join(output_path, out_name))
+    @staticmethod
+    def test_convert():
+        for image in os.listdir(asl2_dataset):
+            image_jpg = image.split(".")[0] + ".jpg"
+            im = Image.open(os.path.join(asl2_dataset, image))
+            os.remove(os.path.join(asl2_dataset, image))
+            im.save(os.path.join(asl2_dataset, image_jpg), quality=95)
 
-    # def test_prewitt(self):
-    #     print(f'PREWITT')
-    #     dataset_path = "../data/dataset/asl-alphabet/asl_alphabet_test"
-    #     output_path = "prewitt"
-    #     if not os.path.exists(output_path):
-    #         os.makedirs(output_path)
-    #     for image in os.listdir(dataset_path):
-    #         print(f'Processing {image}')
-    #         out_name = image
-    #         sobel = Prewitt(os.path.join(dataset_path, image))
-    #         sobel.save_im(os.path.join(output_path, out_name))
-
-    # def test_roberts(self):
-    #     print(f'ROBERTS')
-    #     dataset_path = "../data/dataset/asl-alphabet/asl_alphabet_test"
-    #     output_path = "roberts"
-    #     if not os.path.exists(output_path):
-    #         os.makedirs(output_path)
-    #     for image in os.listdir(dataset_path):
-    #         print(f'Processing {image}')
-    #         out_name = image
-    #         sobel = Roberts(os.path.join(dataset_path, image))
-    #         sobel.save_im(os.path.join(output_path, out_name))
-
-    # def test_canny(self):
-    #     print("CANNY")
-    #     dataset_path = "../data/dataset/asl-alphabet/asl_alphabet_test"
-    #     output_path = "canny"
-    #     if not os.path.exists(output_path):
-    #         os.makedirs(output_path)
-    #     for image in os.listdir(dataset_path):
-    #         print(f'Processing {image}')
-    #         img = mpimg.imread(os.path.join(dataset_path, image))
-    #         img = rgb2gray(img)
-    #         detector = ced.cannyEdgeDetector([img], sigma=1.0, kernel_size=5, lowthreshold=0.01, highthreshold=0.07,
-    #                                          weak_pixel=100)
-    #         img_final = detector.detect()[0]
-    #         if img_final.shape[0] == 3:
-    #             img_final = img_final.transpose(1, 2, 0)
-    #         gray()
-    #         imsave(os.path.join(output_path, image), img_final)
-
-    def test_opencv(self):
-        print("OPENCV")
-        dataset_path = "../data/dataset/asl-alphabet/asl_alphabet_test"
-        output_path = "opencv"
-        if not os.path.exists(output_path):
-            os.makedirs(output_path)
-        if not os.path.exists(os.path.join(output_path, 'skel')):
-            os.makedirs(os.path.join(output_path, 'skel'))
-        for image in os.listdir(dataset_path):
-            print(f'Processing {image}')
-            img = mpimg.imread(os.path.join(dataset_path, image))
-            img = opencv(img)
-            # img = paln_point(img)
-            sk = skel(img)
-            img = img + sk
-            imsave(os.path.join(output_path, image), img)
-            imsave(os.path.join(output_path, 'skel', image), sk)
-
-    def test_compare(self):
+    @staticmethod
+    def test_compare():
         print("Compare")
-        dataset_path = "../data/dataset/asl-alphabet/asl_alphabet_test"
-        output_path = "compare"
+        dataset_path = asl2_dataset
+        output_path = "compare_asl2"
         canny_times, roberts_times, prewitt_times, sobel_times, \
             openc_times, skel_opencv_times, skel_dnn_times = [], [], [], [], [], [], []
         if not os.path.exists(output_path):
@@ -118,7 +59,7 @@ class MyTestCase(unittest.TestCase):
             prewitt = Prewitt(os.path.join(dataset_path, image))
             sobel = Sobel(os.path.join(dataset_path, image))
             openc, openc_time = opencv(orig)
-            skek_opencv, skel_opencv_time = skel(openc.copy())
+            skek_opencv, skel_opencv_time = skel(openc)
             skel_dnn, skel_dnn_time = skeleton(orig.copy())
 
             canny_times.append(canny_time)
@@ -126,7 +67,7 @@ class MyTestCase(unittest.TestCase):
             prewitt_times.append(prewitt.prewitt_time)
             sobel_times.append(sobel.sobel_time)
             openc_times.append(openc_time)
-            skel_opencv_times.append(skel_opencv_time)
+            skel_opencv_times.append(skel_opencv_time + openc_time)
             skel_dnn_times.append(skel_dnn_time)
 
             figure(figsize=(20, 20))
@@ -147,6 +88,7 @@ class MyTestCase(unittest.TestCase):
             subplot(3, 3, 8, title="original", xticks=[], yticks=[])
             imshow(orig)
             savefig(os.path.join(output_path, image))
+            close()
         data = {"min": [], "max": [], "avg": []}
         data["min"].append(min(canny_times))
         data["max"].append(max(canny_times))
@@ -176,9 +118,10 @@ class MyTestCase(unittest.TestCase):
         data["max"].append(max(skel_dnn_times))
         data["avg"].append(np.average(skel_dnn_times))
 
-        result = pd.DataFrame(data=data, index=["canny", "roberts", "prewitt", "sobel", "opencv", "skel_opencv", "skel_dnn"])
+        result = pd.DataFrame(data=data,
+                              index=["canny", "roberts", "prewitt", "sobel", "opencv", "skel_opencv", "skel_dnn"])
         print(result)
-        result.to_csv("result.csv")
+        result.to_csv(os.path.join(output_path, "result.csv"))
 
 
 if __name__ == '__main__':
