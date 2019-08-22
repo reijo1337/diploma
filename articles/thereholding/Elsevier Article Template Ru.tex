@@ -33,6 +33,10 @@
 
 \graphicspath{{figures/ru/}}
 
+% объявляем новую команду для переноса строки внутри ячейки таблицы
+\newcommand{\specialcell}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
 %\journal{Название журнала}
 
 \begin{document}
@@ -63,7 +67,7 @@
 
 \input{chapters/ru/Skeleton}
 
-\input{chapters/ru/Methodology}
+%\input{chapters/ru/Methodology}
 
 \input{chapters/ru/Data}
 
@@ -71,7 +75,10 @@
 
 \input{chapters/ru/Conclusion}
 
-\input{chapters/ru/Acknowledgement}
+%\input{chapters/ru/Acknowledgement}
+\section*{Список литературы}
+\bibliographystyle{unsrt}
+\bibliography{biblio}
 
 \appendix
 \input{chapters/ru/Appendix}
@@ -79,7 +86,4 @@
 %% bibliography
 \phantomsection
 \addcontentsline{toc}{section}{Список литературы}
-\section*{Список литературы}
-\bibliographystyle{unsrt}
-\bibliography{biblio}
 \end{document}

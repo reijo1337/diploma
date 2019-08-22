@@ -45,8 +45,8 @@ class MyTestCase(unittest.TestCase):
     @staticmethod
     def test_compare():
         print("Compare")
-        dataset_path = asl2_dataset
-        output_path = "compare_asl2"
+        dataset_path = colombian_dataset
+        output_path = "compare_colombian"
         canny_times, roberts_times, prewitt_times, sobel_times, \
             openc_times, skel_opencv_times, skel_dnn_times = [], [], [], [], [], [], []
         if not os.path.exists(output_path):
@@ -59,7 +59,7 @@ class MyTestCase(unittest.TestCase):
             prewitt = Prewitt(os.path.join(dataset_path, image))
             sobel = Sobel(os.path.join(dataset_path, image))
             openc, openc_time = opencv(orig)
-            skek_opencv, skel_opencv_time = skel(openc)
+            skek_opencv, skel_opencv_time = skel(openc.copy())
             skel_dnn, skel_dnn_time = skeleton(orig.copy())
 
             canny_times.append(canny_time)
