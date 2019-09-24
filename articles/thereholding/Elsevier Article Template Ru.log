@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.20)  23 SEP 2019 19:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.20)  24 SEP 2019 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -826,28 +826,23 @@ File: figures/ru/sobel.png Graphic file (type png)
 Package pdftex.def Info: figures/ru/sobel.png  used on input line 34.
 (pdftex.def)             Requested size: 468.0pt x 205.77388pt.
  [2 <./figures/ru/sobel.png>]
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 81.
-
-(./src/roberts.py)
-Overfull \hbox (34.43468pt too wide) in paragraph at lines 13--81
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (17.0pt too wide) detected at line 84
-[][] 
- []
-
-[3]
-Overfull \hbox (18.74902pt too wide) in paragraph at lines 108--109
+<figures/ru/roberts.png, id=101, 135.50626pt x 89.33376pt>
+File: figures/ru/roberts.png Graphic file (type png)
+<use figures/ru/roberts.png>
+Package pdftex.def Info: figures/ru/roberts.png  used on input line 68.
+(pdftex.def)             Requested size: 93.59857pt x 61.70714pt.
+ [3 <./figures/ru/roberts.png>]
+Overfull \hbox (18.74902pt too wide) in paragraph at lines 115--116
 []\T2A/cmr/m/n/10.95 ƒл€ по-лу-че-ни€ раз-мы-то-го изоб-ра-же-ни€ мож-но ис-пол
 ь-зо-вать стан-дарт-ную функ-цию $\OML/cmm/m/it/10.95 convolve\PU/cmr/m/n/10.95
  ()$
  []
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 121.
 
 (./src/canny_non_max.py
 Overfull \hbox (21.3691pt too wide) in paragraph at lines 28--29
@@ -855,7 +850,7 @@ Overfull \hbox (21.3691pt too wide) in paragraph at lines 28--29
  []
 
 )
-Overfull \hbox (17.0pt too wide) detected at line 117
+Overfull \hbox (17.0pt too wide) detected at line 124
 [][] 
  []
 
@@ -865,7 +860,7 @@ Overfull \hbox (8.30351pt too wide) in paragraph at lines 8--9
  []
 
 )
-Overfull \hbox (17.0pt too wide) detected at line 127
+Overfull \hbox (17.0pt too wide) detected at line 134
 [][] 
  []
 
@@ -885,7 +880,7 @@ Overfull \hbox (27.90189pt too wide) in paragraph at lines 16--17
  []
 
 )
-Overfull \hbox (17.0pt too wide) detected at line 137
+Overfull \hbox (17.0pt too wide) detected at line 144
 [][] 
  []
 
@@ -935,7 +930,7 @@ Overfull \hbox (17.0pt too wide) detected at line 17
  []
 
 [7]
-<figures/ru/handpose-demo-keypoints.jpg, id=259, 580.1675pt x 786.94pt>
+<figures/ru/handpose-demo-keypoints.jpg, id=248, 580.1675pt x 786.94pt>
 File: figures/ru/handpose-demo-keypoints.jpg Graphic file (type jpg)
 <use figures/ru/handpose-demo-keypoints.jpg>
 Package pdftex.def Info: figures/ru/handpose-demo-keypoints.jpg  used on input 
@@ -951,7 +946,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ) (./chapters/ru/Data.tex [8] [9 <./figures/ru/handpose-demo-keypoints.jpg>])
 (./chapters/ru/Results.tex) [10] (./chapters/ru/Conclusion.tex)
 (./Elsevier Article Template Ru.bbl) (./chapters/ru/Appendix.tex
-<figures/ru/asl.jpg, id=329, 1445.4pt x 1445.4pt>
+<figures/ru/asl.jpg, id=318, 1445.4pt x 1445.4pt>
 File: figures/ru/asl.jpg Graphic file (type jpg)
 <use figures/ru/asl.jpg>
 Package pdftex.def Info: figures/ru/asl.jpg  used on input line 6.
@@ -960,7 +955,7 @@ Package pdftex.def Info: figures/ru/asl.jpg  used on input line 6.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/ru/coombian.jpg, id=330, 1445.4pt x 1445.4pt>
+<figures/ru/coombian.jpg, id=319, 1445.4pt x 1445.4pt>
 File: figures/ru/coombian.jpg Graphic file (type jpg)
 <use figures/ru/coombian.jpg>
 Package pdftex.def Info: figures/ru/coombian.jpg  used on input line 13.
@@ -968,7 +963,7 @@ Package pdftex.def Info: figures/ru/coombian.jpg  used on input line 13.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/ru/asl2.jpg, id=331, 1445.4pt x 1445.4pt>
+<figures/ru/asl2.jpg, id=320, 1445.4pt x 1445.4pt>
 File: figures/ru/asl2.jpg Graphic file (type jpg)
 <use figures/ru/asl2.jpg>
 Package pdftex.def Info: figures/ru/asl2.jpg  used on input line 20.
@@ -976,7 +971,7 @@ Package pdftex.def Info: figures/ru/asl2.jpg  used on input line 20.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/ru/datamix.jpg, id=332, 1445.4pt x 1445.4pt>
+<figures/ru/datamix.jpg, id=321, 1445.4pt x 1445.4pt>
 File: figures/ru/datamix.jpg Graphic file (type jpg)
 <use figures/ru/datamix.jpg>
 Package pdftex.def Info: figures/ru/datamix.jpg  used on input line 27.
@@ -1015,13 +1010,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
  ) 
 Here is how much of TeX's memory you used:
- 14778 strings out of 492616
- 203797 string characters out of 6129481
- 512719 words of memory out of 5000000
- 18169 multiletter control sequences out of 15000+600000
+ 14756 strings out of 492616
+ 203598 string characters out of 6129481
+ 512025 words of memory out of 5000000
+ 18162 multiletter control sequences out of 15000+600000
  20152 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,42p,1185b,1522s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,42p,1185b,1537s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1052,11 +1047,11 @@ texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb></usr/local/texlive/2019/te
 xmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2019/texm
 f-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2019/texmf-
 dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on "Elsevier Article Template Ru.pdf" (17 pages, 1822197 bytes).
+Output written on "Elsevier Article Template Ru.pdf" (17 pages, 1823814 bytes).
 
 PDF statistics:
- 464 PDF objects out of 1000 (max. 8388607)
- 411 compressed objects within 5 object streams
- 208 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 396 compressed objects within 4 object streams
+ 194 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
