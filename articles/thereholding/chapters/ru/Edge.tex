@@ -112,36 +112,5 @@ G_y = (z_8 - z_6)
 	\item Трассировка области неоднозначности
 \end{enumerate}
 
-Для получения размытого изображения можно использовать стандартную функцию $convolve()$ из пакета $scipy.ndimage.filters$. Для поиска градиентов подойдет оператор Собеля, описанный выше. 
-
-Реализация подавления не-максимумов:
-
-\begin{minipage}{0.75\textwidth}
-	\begin{algorithm}[H]
-		\lstinputlisting[language=Python]{src/canny_non_max.py}
-		\caption{Функция подавления не-максимумов}
-		\label{imp:canny-non-max}
-	\end{algorithm}
-\end{minipage}
-
-Реализация опредления потенциальных границ:
-
-\begin{minipage}{0.75\textwidth}
-	\begin{algorithm}[H]
-		\lstinputlisting[language=Python]{src/canny_threholding.py}
-		\caption{Функция определения потенциальных}
-		\label{imp:canny-threholding}
-	\end{algorithm}
-\end{minipage}
-
-Финальным шагом является трассировка областей неоднозначности:
-
-\begin{minipage}{0.75\textwidth}
-	\begin{algorithm}[H]
-		\lstinputlisting[language=Python]{src/canny_hysteresis.py}
-		\caption{Трассировка области неоднозначности}
-		\label{imp:canny-hysteresis}
-	\end{algorithm}
-\end{minipage}
 
 Стоит обратить внимание, что описанные выше методы принимают на вход изображение в серых тонах. То есть нулевым шагом данных методов можно указать преобразование изображения из цветного в черно-белое.
