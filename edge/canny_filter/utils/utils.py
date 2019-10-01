@@ -1,13 +1,11 @@
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import os
+import numpy as np
 
 
 def rgb2gray(rgb):
-    r, g, b = rgb[:, :, 0], rgb[:, :, 1], rgb[:, :, 2]
-    gray = 0.2989 * r + 0.5870 * g + 0.1140 * b
-
-    return gray
+    return np.dot(rgb[...,:3], [0.2989, 0.5870, 0.1140])
 
 
 def load_data(dir_name='faces_imgs'):

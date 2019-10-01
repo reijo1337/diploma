@@ -103,9 +103,52 @@ G_y = (z_8 - z_6)
 	\item единственный отклик на одну границу.
 \end{itemize}
 
-Алгоритм состоит из пяти последовательных шагов:
+Алгоритм состоит из пяти последовательных шагов. Рассмотрим каждый из них подробнее с наглядной визуализацией обработки. Для этого применим данный оператор шаг за шагом к изображению \ref{fig:canny_orig}.
+
+\begin{figure*}[!h]
+	\centering
+	\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_gray}
+	\caption{Исходное изображение для обработки оператором Кэнни}
+	\label{fig:canny_orig}
+\end{figure*}
+
 \begin{enumerate}
-	\item Размытие изображения для удаления лишнего шума.
+	\item Размытие изображения для удаления лишнего шума. Для этого можно применить фильтр Гаусса.
+	Функция Гаусса для двумерного случая задается следующим образом:
+	\begin{eqnarray}\label{eq:gauss}
+	Gaus(x, y, \sigma) = \frac{1}{2 \pi \sigma^2}*e^{\frac{-(x^2+y^2)}{2\sigma^2}}
+	\end{eqnarray}
+	
+	Определение ядра фильтра выглядит следующим образом:
+	
+	\begin{algorithm}[H]
+		GausKernel
+		
+		\SetAlgoLined
+		\KwData{размер ядра size, $\sigma$}
+		\KwResult{ядро фильтра M}
+		
+		Shift $\leftarrow$ floor($\frac{size}{2}$)
+		
+		\For{y$\in$0..size-1}{
+			\For{x$\in$0..size-1}{
+				$M_{x,y} \leftarrow Gaus(x-Shift, y-Shift)$
+			}
+		}
+	
+		\caption{Определение ядра фильтра}
+		
+	\end{algorithm}
+
+	
+	Результат применения фильтра Гаусса к изображению \ref{fig:canny_orig} представлен на рисунке \ref{fig:canny_smoothed}
+	
+	\begin{figure*}[!h]
+		\centering
+		\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_smoothed}
+		\caption{Результат применения фильтра Гаусса}
+		\label{fig:canny_smoothed}
+	\end{figure*}
 	\item Поиск градиентов, для определения границ с максимальным значением градиента.
 	\item Подавление не-максимумов, т.е. для границ берутся исключительно локальные максимумы.
 	\item Определение потенциальных границ с помощью двойной пороговой фильтрации.

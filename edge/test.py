@@ -14,6 +14,7 @@ from edge.sobel import Sobel
 from edge.prewitt import Prewitt
 from edge.roberts import Roberts
 from PIL import Image
+from scipy.ndimage.filters import convolve
 
 asl_dataset = "../data/dataset/asl-alphabet/asl_alphabet_test"
 datamix_dataset = "../data/dataset/data_mix_300/test"
@@ -41,6 +42,29 @@ class MyTestCase(unittest.TestCase):
             im = Image.open(os.path.join(asl2_dataset, image))
             os.remove(os.path.join(asl2_dataset, image))
             im.save(os.path.join(asl2_dataset, image_jpg), quality=95)
+
+    @staticmethod
+    def test_canny():
+        path = "../data/temp"
+        original = mpimg.imread(os.path.join(path, "bmstu.jpg"))
+        original_gray = rgb2gray(original)
+        Image.fromarray(original_gray).convert('RGB').save(os.path.join(path, "bmstu_gray.jpg"))
+        detector = ced.cannyEdgeDetector([original_gray], sigma=1.0, kernel_size=5, lowthreshold=0.01,
+                                         highthreshold=0.07, weak_pixel=100)
+        smoothed1 = convolve(original_gray, detector.gaussian_kernel(5, 1.0))
+        Image.fromarray(smoothed1).convert('RGB').save(os.path.join(path, "bmstu_smoothed.jpg"))
+
+        gradient_mat2, theta_mat2 = detector.sobel_filters(smoothed1)
+        Image.fromarray(gradient_mat2).convert('RGB').save(os.path.join(path, "bmstu_gradient.jpg"))
+
+        non_max3 = detector.non_max_suppression(gradient_mat2, theta_mat2)
+        Image.fromarray(non_max3).convert('RGB').save(os.path.join(path, "bmstu_non_max.jpg"))
+
+        threshold4 = detector.threshold(non_max3)
+        Image.fromarray(threshold4).convert('RGB').save(os.path.join(path, "bmstu_threshold.jpg"))
+
+        final5 = detector.hysteresis(threshold4)
+        Image.fromarray(final5).convert('RGB').save(os.path.join(path, "bmstu_final.jpg"))
 
     @staticmethod
     def test_compare():
