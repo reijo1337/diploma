@@ -22,6 +22,11 @@ John Canny.
 \newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
   on}, PAMI-8:679 -- 698, 12 1986.
 
+\bibitem{shapiro:2001}
+{L.G.} Shapiro and {G.C.} Stockman.
+\newblock {\em Computer Vision}.
+\newblock Prentice-Hall, Upper Saddle River, NJ, 2001.
+
 \bibitem{Phung}
 S.L. Phung, Abdesselam Bouzerdoum, and Douglas Chai.
 \newblock Skin segmentation using color and edge information.

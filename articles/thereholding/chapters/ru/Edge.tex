@@ -113,33 +113,11 @@ G_y = (z_8 - z_6)
 \end{figure*}
 
 \begin{enumerate}
-	\item Размытие изображения для удаления лишнего шума. Для этого можно применить фильтр Гаусса.
-	Функция Гаусса для двумерного случая задается следующим образом:
+	\item Размытие изображения для удаления лишнего шума. Для этого можно применить фильтр Гаусса\cite{shapiro:2001}.
+	Функция, используемая этим фильтром, для двумерного случая задается формулой  \ref{eq:gauss}.
 	\begin{eqnarray}\label{eq:gauss}
 	Gaus(x, y, \sigma) = \frac{1}{2 \pi \sigma^2}*e^{\frac{-(x^2+y^2)}{2\sigma^2}}
 	\end{eqnarray}
-	
-	Определение ядра фильтра выглядит следующим образом:
-	
-	\begin{algorithm}[H]
-		GausKernel
-		
-		\SetAlgoLined
-		\KwData{размер ядра size, $\sigma$}
-		\KwResult{ядро фильтра M}
-		
-		Shift $\leftarrow$ floor($\frac{size}{2}$)
-		
-		\For{y$\in$0..size-1}{
-			\For{x$\in$0..size-1}{
-				$M_{x,y} \leftarrow Gaus(x-Shift, y-Shift)$
-			}
-		}
-	
-		\caption{Определение ядра фильтра}
-		
-	\end{algorithm}
-
 	
 	Результат применения фильтра Гаусса к изображению \ref{fig:canny_orig} представлен на рисунке \ref{fig:canny_smoothed}
 	
@@ -150,9 +128,58 @@ G_y = (z_8 - z_6)
 		\label{fig:canny_smoothed}
 	\end{figure*}
 	\item Поиск градиентов, для определения границ с максимальным значением градиента.
-	\item Подавление не-максимумов, т.е. для границ берутся исключительно локальные максимумы.
+	На данном этапе можно использовать оператор Собеля \cite{Sobel}, работа которого была описана выше.
+	
+	Результат поиска градиентов в размытом изображении представлен на рисунке \ref{fig:canny_gradient}.
+	
+	\begin{figure*}[!h]
+		\centering
+		\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_gradient}
+		\caption{Результат поиска градиентов}
+		\label{fig:canny_gradient}
+	\end{figure*}
+
+	\item Подавление не-максимумов, т.е. исключение из границ не локальных максимумов.
+	
+	На данном шаге происходит проверка, является ли конкретный пиксель локальным максимумом вдоль направления градиента. Таким образом исключаются ложные границы.
+	
+	\begin{figure*}[!h]
+		\centering
+		\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_non_max}
+		\caption{Изображение после подавления не-максимумов}
+		\label{fig:canny_non_max}
+	\end{figure*}
+
 	\item Определение потенциальных границ с помощью двойной пороговой фильтрации.
+	
+	Фильтр использует два порога фильтрации:
+	\begin{itemize}
+		\item Все пиксели со значением больше верхней границы принимают максимальное значение (достоверная граница).
+		\item Все пиксели со значением меньше нижней границы подавляются.
+		\item Все пиксели со значением в диапазоне границ принимают фиксированное среднее значение. Их уточнение происходит на следующем этапе.
+	\end{itemize}
+
+	Пример фильтрации с порогами 0,01 и 0,07 представлен на рисунке \ref{fig:canny_threshold}.
+	
+	\begin{figure*}[!h]
+		\centering
+		\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_threshold}
+		\caption{Результат двойной пороговой фильтрации}
+		\label{fig:canny_threshold}
+	\end{figure*}
+
 	\item Трассировка области неоднозначности
+	
+	На данном этапе происходит разделение пикселей, получивших промежуточное значение на предыдущем шаге, на границы и фон (увеличение значения и подавление). Пиксель добавляется к границе, если он соприкасается с ней по одному из 8-ми направлений.
+	
+	Результат работы оператора Кэнни представлен на рисунке \ref{fig:canny_final}.
+	
+	\begin{figure*}[!h]
+		\centering
+		\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_final}
+		\caption{Результат работы оператора Кэнни}
+		\label{fig:canny_final}
+	\end{figure*}
 \end{enumerate}
 
 
