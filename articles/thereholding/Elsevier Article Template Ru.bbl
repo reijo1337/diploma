@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Sobel}
 Irwin Sobel.
@@ -47,5 +47,27 @@ Tomas Simon, Hanbyul Joo, Iain Matthews, and Yaser Sheikh.
 \newblock Hand keypoint detection in single images using multiview
   bootstrapping.
 \newblock 04 2017.
+
+\bibitem{AslAlphabet}
+{ASL} {A}lphabet. {I}mage data set for alphabets in the {A}merican {S}ign
+  {L}anguage [{Э}лектронный ресурс].
+\newblock \url{https://www.kaggle.com/grassknoted/asl-alphabet}.
+
+\bibitem{Colombian}
+{H}and {G}esture of the {C}olombian sign language. {H}and gestures, recognizing
+  the numbers from 0 to 5 and the vowels. [{Э}лектронный
+  ресурс].
+\newblock
+  \url{https://www.kaggle.com/evernext10/hand-gesture-of-the-colombian-sign-language}.
+
+\bibitem{asl2}
+{ASL} {F}ingerspelling {I}mages ({RGB} \& {D}epth). [{Э}лектронный
+  ресурс].
+\newblock
+  \url{https://www.kaggle.com/mrgeislinger/asl-rgb-depth-fingerspelling-spelling-it-out}.
+
+\bibitem{sl09}
+sign language between 0 9. [{Э}лектронный ресурс].
+\newblock \url{https://www.kaggle.com/beyzance96/sign-language-between-0-9}.
 
 \end{thebibliography}

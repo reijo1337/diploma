@@ -6,45 +6,45 @@ Database file #1: biblio.bib
 Warning--empty publisher in Roberts
 Warning--empty booktitle in Phung
 Warning--empty journal in DNN
-You've used 9 entries,
+You've used 13 entries,
             1791 wiz_defined-function locations,
-            508 strings with 4648 characters,
-and the built_in function-call counts, 2121 in all, are:
-= -- 193
-> -- 65
+            522 strings with 5423 characters,
+and the built_in function-call counts, 2523 in all, are:
+= -- 225
+> -- 69
 < -- 3
-+ -- 26
++ -- 30
 - -- 17
 * -- 113
-:= -- 311
-add.period$ -- 27
-call.type$ -- 9
-change.case$ -- 7
+:= -- 349
+add.period$ -- 35
+call.type$ -- 13
+change.case$ -- 11
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 113
-empty$ -- 215
+cite$ -- 16
+duplicate$ -- 133
+empty$ -- 287
 format.name$ -- 17
-if$ -- 501
+if$ -- 609
 int.to.chr$ -- 0
-int.to.str$ -- 9
+int.to.str$ -- 13
 missing$ -- 12
-newline$ -- 48
+newline$ -- 64
 num.names$ -- 9
-pop$ -- 42
+pop$ -- 66
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 67
+skip$ -- 90
 stack$ -- 0
 substring$ -- 140
-swap$ -- 37
+swap$ -- 41
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
 while$ -- 16
-width$ -- 10
-write$ -- 95
+width$ -- 15
+write$ -- 123
 (There were 3 warnings)
