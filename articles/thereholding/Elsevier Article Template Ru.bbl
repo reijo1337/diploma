@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{inproceedings}
+Liang-Guo Zhang, Yiqiang Chen, Gaolin Fang, Xilin Chen, and Wen Gao.
+\newblock A vision-based sign language recognition system using tied-mixture
+  density hmm.
+\newblock pages 198--204, 01 2004.
+
 \bibitem{Sobel}
 Irwin Sobel.
 \newblock An isotropic 3x3 image gradient operator.
