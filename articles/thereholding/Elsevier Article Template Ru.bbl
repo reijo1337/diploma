@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{slr}
+Suharjito Suharjito, Ricky Anderson, Fanny Wiryana, Meita Ariesta, and
+  I~Gede~Putra Kusuma~Negara.
+\newblock Sign language recognition application systems for deaf-mute people: A
+  review based on input-process-output.
+\newblock {\em Procedia Computer Science}, 116:441--448, 12 2017.
+
 \bibitem{inproceedings}
 Liang-Guo Zhang, Yiqiang Chen, Gaolin Fang, Xilin Chen, and Wen Gao.
 \newblock A vision-based sign language recognition system using tied-mixture
