@@ -83,4 +83,13 @@ Tomas Simon, Hanbyul Joo, Iain Matthews, and Yaser Sheikh.
 sign language between 0 9. [{Э}лектронный ресурс].
 \newblock \url{https://www.kaggle.com/beyzance96/sign-language-between-0-9}.
 
+\bibitem{10.1007/978-3-642-31298-4_16}
+Pedro Gil-Jim{\'e}nez, Beatriz Losilla-L{\'o}pez, Rafael Torres-Cueco,
+  Aur{\'e}lio Campilho, and Roberto L{\'o}pez-Sastre.
+\newblock Hand detection and tracking using the skeleton of the blob for
+  medical rehabilitation applications.
+\newblock In Aur{\'e}lio Campilho and Mohamed Kamel, editors, {\em Image
+  Analysis and Recognition}, pages 130--137, Berlin, Heidelberg, 2012. Springer
+  Berlin Heidelberg.
+
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2019)
+This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Elsevier Article Template Ru.aux
 The style file: unsrt.bst
@@ -7,45 +7,45 @@ Warning--empty booktitle in inproceedings
 Warning--empty publisher in Roberts
 Warning--empty booktitle in Phung
 Warning--empty journal in DNN
-You've used 15 entries,
+You've used 16 entries,
             1791 wiz_defined-function locations,
-            532 strings with 5846 characters,
-and the built_in function-call counts, 3170 in all, are:
-= -- 278
-> -- 103
-< -- 4
-+ -- 42
-- -- 27
-* -- 161
-:= -- 444
-add.period$ -- 41
-call.type$ -- 15
-change.case$ -- 13
+            541 strings with 6232 characters,
+and the built_in function-call counts, 3622 in all, are:
+= -- 321
+> -- 128
+< -- 5
++ -- 50
+- -- 34
+* -- 192
+:= -- 510
+add.period$ -- 45
+call.type$ -- 16
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 162
-empty$ -- 346
-format.name$ -- 27
-if$ -- 759
+cite$ -- 20
+duplicate$ -- 183
+empty$ -- 383
+format.name$ -- 34
+if$ -- 866
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 14
-newline$ -- 74
-num.names$ -- 11
-pop$ -- 74
+int.to.str$ -- 16
+missing$ -- 15
+newline$ -- 79
+num.names$ -- 14
+pop$ -- 79
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 109
+skip$ -- 124
 stack$ -- 0
-substring$ -- 189
-swap$ -- 52
-text.length$ -- 4
+substring$ -- 221
+swap$ -- 62
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 21
-width$ -- 17
-write$ -- 144
+while$ -- 26
+width$ -- 18
+write$ -- 157
 (There were 4 warnings)
