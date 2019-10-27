@@ -10,7 +10,7 @@
 	\item Оператор Кэнни \cite{Canny}.
 \end{itemize}
 
-Рассмотрим каждый подробнее:
+Рассмотрим каждый метод подробнее:
 
 \subsection{Оператор Собеля}
 
@@ -107,7 +107,7 @@ G_y = (z_8 - z_6)
 
 \subsection{Оператор Кэнни}
 
-Данный фильтр\cite{Canny} был разработан с учетом удовлетворения следующих свойств:
+Данный фильтр\cite{Canny} был разработан с учетом удовлетворения следующим условиям:
 \begin{itemize}
 	\item хорошее обнаружение (Кэнни трактовал это свойство как повышение отношения сигнал/шум);
 	\item хорошая локализация (правильное определение положения границы);
@@ -118,55 +118,28 @@ G_y = (z_8 - z_6)
 \begin{figure*}[!h]
 	\centering
 	\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/canny-block}
-	\caption{Исходное изображение для обработки оператором Кэнни}
+	\caption{Блок-схема алгоритма работы оператора Кэнни}
 	\label{fig:canny_block}
-\end{figure*}
-
-\begin{figure*}[!h]
-	\centering
-	\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_gray}%
-	\caption{Исходное изображение для обработки оператором Кэнни}
-	\label{fig:canny_orig}
 \end{figure*}
 
 \begin{enumerate}
 	\item Размытие изображения для удаления лишнего шума. Для этого можно применить фильтр Гаусса\cite{shapiro:2001}.
-	Функция, используемая этим фильтром, для двумерного случая задается формулой  \ref{eq:gauss}.
+	Функция размытия, используемая этим фильтром, для двумерного случая задается формулой  \ref{eq:gauss}.
 	\begin{eqnarray}\label{eq:gauss}
 	Gaus(x, y, \sigma) = \frac{1}{2 \pi \sigma^2}*e^{\frac{-(x^2+y^2)}{2\sigma^2}}
 	\end{eqnarray}
 	
-	Результат применения фильтра Гаусса к изображению \ref{fig:canny_orig} представлен на рисунке \ref{fig:canny_smoothed}
+	Результат применения фильтра Гаусса к изображению \ref{fig:canny}a представлен на рисунке \ref{fig:canny}б.
 	
-	\begin{figure*}[!h]
-		\centering
-		\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_smoothed}
-		\caption{Результат применения фильтра Гаусса}
-		\label{fig:canny_smoothed}
-	\end{figure*}
 	\item Поиск градиентов, для определения границ с максимальным значением градиента.
 	На данном этапе можно использовать оператор Собеля \cite{Sobel}, работа которого была описана выше.
 	
-	Результат поиска градиентов в размытом изображении представлен на рисунке \ref{fig:canny_gradient}.
+	Результат поиска градиентов в размытом изображении представлен на рисунке \ref{fig:canny}в.
 	
-	\begin{figure*}[!h]
-		\centering
-		\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_gradient}
-		\caption{Результат поиска градиентов}
-		\label{fig:canny_gradient}
-	\end{figure*}
-
 	\item Подавление не-максимумов, т.е. исключение из границ не локальных максимумов.
 	
-	На данном шаге происходит проверка, является ли конкретный пиксель локальным максимумом вдоль направления градиента. Таким образом исключаются ложные границы.
+	На данном шаге происходит проверка, является ли конкретный пиксель локальным максимумом вдоль направления градиента. Таким образом исключаются ложные границы. Результат экспериментального исследования данного этапа представлен на рисунке \ref{fig:canny}г.
 	
-	\begin{figure*}[!h]
-		\centering
-		\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_non_max}
-		\caption{Изображение после подавления не-максимумов}
-		\label{fig:canny_non_max}
-	\end{figure*}
-
 	\item Определение потенциальных границ с помощью двойной пороговой фильтрации.
 	
 	Фильтр использует два порога фильтрации:
@@ -176,25 +149,38 @@ G_y = (z_8 - z_6)
 		\item Все пиксели со значением в диапазоне границ принимают фиксированное среднее значение. Их уточнение происходит на следующем этапе.
 	\end{itemize}
 
-	Пример фильтрации с порогами 0,01 и 0,07 представлен на рисунке \ref{fig:canny_threshold}.
-	
-	\begin{figure*}[!h]
-		\centering
-		\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_threshold}
-		\caption{Результат двойной пороговой фильтрации}
-		\label{fig:canny_threshold}
-	\end{figure*}
+	Пример фильтрации с порогами 0,01 и 0,07 представлен на рисунке \ref{fig:canny}д.
 
 	\item Трассировка области неоднозначности
 	
 	На данном этапе происходит разделение пикселей, получивших промежуточное значение на предыдущем шаге, на границы и фон (увеличение значения и подавление). Пиксель добавляется к границе, если он соприкасается с ней по одному из 8-ми направлений.
 	
-	Результат работы оператора Кэнни представлен на рисунке \ref{fig:canny_final}.
-	
-	\begin{figure*}[!h]
-		\centering
-		\includegraphics[width=0.2\textwidth,keepaspectratio]{figures/ru/bmstu_final}
-		\caption{Результат работы оператора Кэнни}
-		\label{fig:canny_final}
-	\end{figure*}
+	Результат работы оператора Кэнни представлен на рисунке \ref{fig:canny}е.
 \end{enumerate}
+
+
+\begin{figure}[ht!]
+	\begin{minipage}[h]{0.49\linewidth}
+		\center{\includegraphics[width=0.5\linewidth]{figures/ru/bmstu_gray} \\ а)}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[h]{0.49\linewidth}
+		\center{\includegraphics[width=0.5\linewidth]{figures/ru/bmstu_smoothed} \\ б)}
+	\end{minipage}
+	\begin{minipage}[h]{0.49\linewidth}
+		\center{\includegraphics[width=0.5\linewidth]{figures/ru/bmstu_gradient} \\ в)}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[h]{0.49\linewidth}
+		\center{\includegraphics[width=0.5\linewidth]{figures/ru/bmstu_non_max} \\ г)}
+	\end{minipage}
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[width=0.5\linewidth]{figures/ru/bmstu_threshold} \\ д)}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[width=0.5\linewidth]{figures/ru/bmstu_final} \\ е)}
+\end{minipage}
+	\caption{Результаты экспериментального исследования этапов оператора Кэнни: а) исходное изображение; б) применение размытия; в) поиск градиентов; г) подавление не-максимумов; д) двойная пороговая фильтрация; г) трассировка областей неоднозначности.}
+	\label{fig:canny}
+\end{figure}

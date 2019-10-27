@@ -61,6 +61,22 @@ Tomas Simon, Hanbyul Joo, Iain Matthews, and Yaser Sheikh.
   bootstrapping.
 \newblock 04 2017.
 
+\bibitem{PIL}
+{P}ython {I}maging {L}ibrary ({PIL}) [{Э}лектронный ресурс].
+\newblock \url{https://www.kaggle.com/beyzance96/sign-language-between-0-9}.
+
+\bibitem{scipy}
+{S}ci{P}y [{Э}лектронный ресурс].
+\newblock \url{https://scipy.org/}.
+
+\bibitem{numpy}
+{N}um{P}y [{Э}лектронный ресурс].
+\newblock \url{https://numpy.org/}.
+
+\bibitem{opencv}
+{O}pen{CV} [{Э}лектронный ресурс].
+\newblock \url{https://opencv.org/}.
+
 \bibitem{AslAlphabet}
 {ASL} {A}lphabet. {I}mage data set for alphabets in the {A}merican {S}ign
   {L}anguage [{Э}лектронный ресурс].
