@@ -1,6 +1,8 @@
 import os
 import time
 import unittest
+
+import matplotlib
 import pandas as pd
 import matplotlib.image as mpimg
 from matplotlib.pyplot import gray, figure, subplot, imshow, savefig, close
@@ -45,11 +47,11 @@ class MyTestCase(unittest.TestCase):
 
     @staticmethod
     def test_canny():
-        path = "../data/temp"
+        path = "../data/temp2"
         original = mpimg.imread(os.path.join(path, "bmstu.jpg"))
         original_gray = rgb2gray(original)
         Image.fromarray(original_gray).convert('RGB').save(os.path.join(path, "bmstu_gray.jpg"))
-        detector = ced.cannyEdgeDetector([original_gray], sigma=1.0, kernel_size=5, lowthreshold=0.01,
+        detector = ced.cannyEdgeDetector([original_gray], sigma=1.0, kernel_size=5, lowthreshold=0.03,
                                          highthreshold=0.07, weak_pixel=100)
         smoothed1 = convolve(original_gray, detector.gaussian_kernel(5, 1.0))
         Image.fromarray(smoothed1).convert('RGB').save(os.path.join(path, "bmstu_smoothed.jpg"))
@@ -68,9 +70,11 @@ class MyTestCase(unittest.TestCase):
 
     @staticmethod
     def test_compare():
+        start_time = time.time()
+        matplotlib.rcParams.update({'font.size': 30})
         print("Compare")
-        dataset_path = colombian_dataset
-        output_path = "compare_colombian"
+        dataset_path = asl2_dataset
+        output_path = "compare_asl2"
         canny_times, roberts_times, prewitt_times, sobel_times, \
             openc_times, skel_opencv_times, skel_dnn_times = [], [], [], [], [], [], []
         if not os.path.exists(output_path):
@@ -95,21 +99,21 @@ class MyTestCase(unittest.TestCase):
             skel_dnn_times.append(skel_dnn_time)
 
             figure(figsize=(20, 20))
-            subplot(3, 3, 1, title="canny", xticks=[], yticks=[])
+            subplot(3, 3, 1, title="а", xticks=[], yticks=[])
             imshow(canny, "gray")
-            subplot(3, 3, 2, title="roberts", xticks=[], yticks=[])
+            subplot(3, 3, 2, title="б", xticks=[], yticks=[])
             imshow(roberts.sobelIm, "gray")
-            subplot(3, 3, 3, title="prewitt", xticks=[], yticks=[])
+            subplot(3, 3, 3, title="в", xticks=[], yticks=[])
             imshow(prewitt.prewittIm, "gray")
-            subplot(3, 3, 4, title="sobel", xticks=[], yticks=[])
+            subplot(3, 3, 4, title="г", xticks=[], yticks=[])
             imshow(sobel.sobelIm, "gray")
-            subplot(3, 3, 5, title="opencv", xticks=[], yticks=[])
+            subplot(3, 3, 5, title="д", xticks=[], yticks=[])
             imshow(openc, "gray")
-            subplot(3, 3, 6, title="skel_openv", xticks=[], yticks=[])
+            subplot(3, 3, 6, title="е", xticks=[], yticks=[])
             imshow(skek_opencv)
-            subplot(3, 3, 7, title="skel_dnn", xticks=[], yticks=[])
+            subplot(3, 3, 7, title="ж", xticks=[], yticks=[])
             imshow(skel_dnn)
-            subplot(3, 3, 8, title="original", xticks=[], yticks=[])
+            subplot(3, 3, 8, title="з", xticks=[], yticks=[])
             imshow(orig)
             savefig(os.path.join(output_path, image))
             close()
@@ -146,6 +150,7 @@ class MyTestCase(unittest.TestCase):
                               index=["canny", "roberts", "prewitt", "sobel", "opencv", "skel_opencv", "skel_dnn"])
         print(result)
         result.to_csv(os.path.join(output_path, "result.csv"))
+        print(f'total time: {time.time() - start_time}')
 
 
 if __name__ == '__main__':
