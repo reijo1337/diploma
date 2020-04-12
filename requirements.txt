@@ -1,3 +1,6 @@
+scikit-learn
+keras
+tensorflow
 opencv-python
 scipy
 matplotlib

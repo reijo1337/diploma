@@ -38,7 +38,12 @@ def _ycc(r, g, b):
 
 def opencv(hand):
     start_time = time.time()
-    imgYCC = cv2.cvtColor(hand, cv2.COLOR_BGR2YCR_CB)
+    img_ycc = shape(hand)
+    return img_ycc, time.time() - start_time
+
+
+def shape(hand):
+    img_ycc = cv2.cvtColor(hand, cv2.COLOR_BGR2YCR_CB)
     y, cb, cr = _ycc(53, 38, 31)
     avg_skin_color = [y, cb, cr]
     error = 35
@@ -46,16 +51,17 @@ def opencv(hand):
         for j in range(0, hand.shape[1]):  # looping through the columns(width)
             # calculate the Euclidean distance between a pixel and the skin color defined above
             if (math.sqrt(
-                    (int(imgYCC[i, j, 0]) - avg_skin_color[0]) ** 2 +
-                    (int(imgYCC[i, j, 1]) - avg_skin_color[1]) ** 2 +
-                    (int(imgYCC[i, j, 2]) - avg_skin_color[2]) ** 2) <= error):
-                imgYCC[i, j] = [255, 255, 255]  # make the pixel white
+                    (int(img_ycc[i, j, 0]) - avg_skin_color[0]) ** 2 +
+                    (int(img_ycc[i, j, 1]) - avg_skin_color[1]) ** 2 +
+                    (int(img_ycc[i, j, 2]) - avg_skin_color[2]) ** 2) <= error):
+                img_ycc[i, j] = [255, 255, 255]  # make the pixel white
             else:
-                imgYCC[i, j] = [0, 0, 0]  # make the pixel black
+                img_ycc[i, j] = [0, 0, 0]  # make the pixel black
     kernel = np.ones((7, 7), np.uint8)
-    imgYCC = cv2.dilate(imgYCC, kernel, iterations=1)
-    imgYCC = cv2.erode(imgYCC, kernel, iterations=1)
-    return imgYCC, time.time() - start_time
+    img_ycc = cv2.dilate(img_ycc, kernel, iterations=1)
+    img_ycc = cv2.erode(img_ycc, kernel, iterations=1)
+    ret = cv2.cvtColor(img_ycc, cv2.COLOR_BGR2GRAY)
+    return ret
 
 
 def paln_point(hand):
