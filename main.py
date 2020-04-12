@@ -12,20 +12,20 @@ import numpy as np
 import tensorflow as tf
 
 
-def load_images(root):
+def load_images(root_dir):
     x_train = []
     y_train = []
     x_test = []
     y_test = []
 
-    for root, dirs, files in os.walk(root+"data_mix_300/train"):
+    for root, dirs, files in os.walk(root_dir+"data_mix_300/train"):
         for name in files:
             img = mpimg.imread(os.path.join(root, name))
             label = root.split("/")[-1]
             x_train.append(shape(img))
             y_train.append(label)
 
-    for root, dirs, files in os.walk(root+"data_mix_300/valid"):
+    for root, dirs, files in os.walk(root_dir+"data_mix_300/valid"):
         for name in files:
             img = mpimg.imread(os.path.join(root, name))
             label = root.split("/")[-1]
