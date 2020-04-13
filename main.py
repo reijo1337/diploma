@@ -51,8 +51,6 @@ def load_images(root_dir):
 
 
 def store_config(name, config, path):
-    if not os.path.isdir(path):
-        os.mkdir(path)
     data = str(name) + '\n' + str(config)
     with open(str(path) + datetime.now().strftime('%Y-%m-%d_%H-%M-%S_') + str('config') + '.txt', 'w') as f:
         f.write(data)
