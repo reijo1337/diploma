@@ -1,6 +1,7 @@
 import os
 from datetime import datetime
 
+from PIL import Image
 import matplotlib.image as mpimg
 
 from analitics import fit_history_plot, evaluation_results, plot_prediction, save_model_summary
@@ -20,18 +21,29 @@ def load_images(root_dir):
     x_test = []
     y_test = []
 
+    baseheight = 100
+
     for root, dirs, files in os.walk("data/data_mix_300/data_mix_300/train"):
         for name in files:
             img = mpimg.imread(os.path.join(root, name))
             label = root.split("/")[-1]
-            x_train.append(shape(img))
+            img = shape(img)
+            hpercent = (baseheight / float(img.size[1]))
+            wsize = int((float(img.size[0]) * float(hpercent)))
+            img = img.resize((wsize, baseheight), Image.ANTIALIAS)
+
+            x_train.append(img)
             y_train.append(label)
 
     for root, dirs, files in os.walk("data/data_mix_300/data_mix_300/valid"):
         for name in files:
             img = mpimg.imread(os.path.join(root, name))
             label = root.split("/")[-1]
-            x_test.append(shape(img))
+            img = shape(img)
+            hpercent = (baseheight / float(img.size[1]))
+            wsize = int((float(img.size[0]) * float(hpercent)))
+            img = img.resize((wsize, baseheight), Image.ANTIALIAS)
+            x_test.append(img)
             y_test.append(label)
     label_binarizer = LabelBinarizer()
     unique_val = np.unique(np.array(y_test))
