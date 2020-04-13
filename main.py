@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 
-from skimage.transform import resize
+from skimage.transform import rescale, resize, downscale_local_mean
 import matplotlib.image as mpimg
 
 from analitics import fit_history_plot, evaluation_results, plot_prediction, save_model_summary
@@ -12,7 +12,6 @@ from sklearn.preprocessing import LabelBinarizer
 import numpy as np
 import tensorflow as tf
 
-from test import create_model, train
 from utils import get_distribution_strategy, get_strategy_scope
 
 
@@ -75,18 +74,50 @@ if __name__ == "__main__":
 
     strategy_scope = get_strategy_scope(strategy)
 
-    x_train, y_train, x_test, y_test, classes = load_images(config.DATA_DIR)
-
-    config.CLASS_NAMES = classes
-
     with strategy_scope:
-        model = create_model(x_test.shape[1:], len(config.CLASS_NAMES), config.NUM_ROUTING)
+        model = CapsNet(config)
         model.compile(optimizer='adam',
                       loss=tf.keras.losses.categorical_crossentropy,  # margin_loss
                       metrics={'output_1': ['accuracy']})
-        model.summary()
-        train(model=model, data=((x_train, y_train), (x_test, y_test)))
 
-    y_pred, x_recon = model.predict([x_test, y_test], batch_size=1)
-    print('-'*50)
-    print('Test acc:', np.sum(np.argmax(y_pred, 1) == np.argmax(y_test, 1))/y_test.shape[0])
+    imgs, labels, imgs_test, labels_test, classes = load_images(config.DATA_DIR)
+
+    validation_split = 0.2
+    imgs_train = imgs[:int((1 - validation_split) * len(imgs))]
+    labels_train = labels[:int((1 - validation_split) * len(labels))]
+    imgs_validation = imgs[int(-validation_split * len(imgs)):]
+    labels_validation = labels[int(-validation_split * len(labels)):]
+
+    config.CLASS_NAMES = classes
+
+    # callbacks
+    tensorboard = tf.keras.callbacks.TensorBoard(log_dir=config.LOGS_DIR)
+    checkpoint = tf.keras.callbacks.ModelCheckpoint(config.CHECKPOINT_FILE,
+                                                    save_best_only=True,
+                                                    save_weights_only=True,
+                                                    verbose=1)
+    # training
+    history = model.fit(x=imgs_train, y=labels_train,
+                        batch_size=config.BATCH_SIZE, epochs=config.NUM_EPOCH,
+                        validation_data=(imgs_validation, labels_validation),
+                        shuffle=True, callbacks=[tensorboard, checkpoint])
+    fit_history_plot(history, config.PLOTS_DIR)
+
+    # evaluate
+    [loss_, accuracy_] = model.evaluate(x=imgs_test, y=labels_test, batch_size=config.BATCH_SIZE, )
+    loss__ = 'loss:     {:.5}'.format(loss_)
+    accuracy__ = 'accuracy: {:.3%}'.format(accuracy_)
+    evaluation_results([loss__, accuracy__], config.PLOTS_DIR)
+
+    # prediction
+    labels_test_pred = model.predict(imgs_test)
+    pred = np.zeros_like(labels_test_pred)
+    for index, value in enumerate(np.argmax(labels_test_pred, axis=-1)):
+        pred[index][value] = 1.0
+    labels_test_str = config.CLASS_NAMES[np.where(labels_test.numpy() == 1.0)[1]]
+    labels_test_pred_str = config.CLASS_NAMES[np.where(pred == 1.0)[1]]
+    plot_prediction(imgs_test, labels_test_str, labels_test_pred_str, config.PLOTS_DIR)
+
+    # model summary
+    save_model_summary(model, config.PLOTS_DIR)
+    model.summary()

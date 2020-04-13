@@ -2,6 +2,7 @@ import tensorflow as tf
 import tensorflow.keras.backend as K
 from tensorflow.keras import layers, initializers
 from tensorflow.python.keras.preprocessing.image import ImageDataGenerator
+import numpy as np
 
 
 class CapsuleLayer(layers.Layer):
@@ -35,11 +36,14 @@ class CapsuleLayer(layers.Layer):
     def call(self, inputs, training=None):
         # inputs.shape=[None, input_num_capsule, input_dim_vector]
         # Expand dims to [None, input_num_capsule, 1, 1, input_dim_vector]
+        print(inputs.shape)
         inputs_expand = K.expand_dims(K.expand_dims(inputs, 2), 2)
+        print(inputs_expand.shape)
 
         # Replicate num_capsule dimension to prepare being multiplied by W
         # Now it has shape = [None, input_num_capsule, num_capsule, 1, input_dim_vector]
         inputs_tiled = K.tile(inputs_expand, [1, 1, self.num_capsule, 1, 1])
+        print(inputs_tiled.shape)
 
         """  
         # Compute `inputs * W` by expanding the first dim of W. More time-consuming and need batch_size.
