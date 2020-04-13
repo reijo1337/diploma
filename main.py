@@ -11,6 +11,8 @@ from sklearn.preprocessing import LabelBinarizer
 import numpy as np
 import tensorflow as tf
 
+from utils import get_distribution_strategy, get_strategy_scope
+
 
 def load_images(root_dir):
     x_train = []
@@ -60,10 +62,18 @@ if __name__ == "__main__":
     config = Config()
     store_config('capsule network', config, config.PLOTS_DIR)
 
-    model = CapsNet(config)
-    model.compile(optimizer='adam',
-                  loss=tf.keras.losses.categorical_crossentropy,  # margin_loss
-                  metrics={'output_1': ['accuracy']})
+    strategy = get_distribution_strategy(
+        distribution_strategy=config.DISTRIBUTION_STRATEGY,
+        num_gpus=config.NUM_GPUS,
+        tpu_address=config.TPU)
+
+    strategy_scope = get_strategy_scope(strategy)
+
+    with strategy_scope:
+        model = CapsNet(config)
+        model.compile(optimizer='adam',
+                      loss=tf.keras.losses.categorical_crossentropy,  # margin_loss
+                      metrics={'output_1': ['accuracy']})
 
     imgs, labels, imgs_test, labels_test, classes = load_images(config.DATA_DIR)
 

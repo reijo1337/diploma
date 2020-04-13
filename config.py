@@ -45,6 +45,10 @@ class Config:
 
         self.NUM_ROUTING = 3
 
+        self.DISTRIBUTION_STRATEGY = args.distribution_strategy
+        self.NUM_GPUS = bool(args.num_gpus)
+        self.TPU = args.tpu
+
     def __str__(self):
         result = []
         for x in dir(self):
@@ -94,7 +98,12 @@ class Config:
                             help='turn the debug mode settings on (small dataset)')
         parser.add_argument('--number_of_caps_layers', help='Specify how many capsule layers shall be included. (Must be greater or equal to one.)',
                             type=lambda x: (x > 0) and x.is_integer(), default=1)
-
+        parser.add_argument('--distribution_strategy', help='Specify which type of distribution use',
+                            default="off")
+        parser.add_argument('--num_gpus', help='Specify count of gpu',
+                            default=0, type=int)
+        parser.add_argument('--tpu', help='Specify tpu address',
+                            default="")
         args = parser.parse_args()
         return args
 
