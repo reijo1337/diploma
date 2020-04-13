@@ -134,8 +134,7 @@ def evaluation_results(data, path):
 
 
 def save_model_summary(model, path):
-    validate_path(path)
-    with open(str(path) + datetime.now().strftime('%Y-%m-%d_%H-%M-%S_') + str('model_summary') + '.txt', 'w') as f:
+    with open("data/data_mix_300/plots/" + datetime.now().strftime('%Y-%m-%d_%H-%M-%S_') + str('model_summary') + '.txt', 'w') as f:
         model.summary(print_fn=lambda x: f.write(x + '\n'))
 
 
