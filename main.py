@@ -52,7 +52,7 @@ def load_images(root_dir):
 
 def store_config(name, config, path):
     data = str(name) + '\n' + str(config)
-    with open(str(path) + datetime.now().strftime('%Y-%m-%d_%H-%M-%S_') + str('config') + '.txt', 'w') as f:
+    with open("data/data_mix_300/plots/" + datetime.now().strftime('%Y-%m-%d_%H-%M-%S_') + str('config') + '.txt', 'w') as f:
         f.write(data)
 
 

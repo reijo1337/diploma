@@ -1,0 +1,2 @@
+gcloud compute ssh gestures-tpu --zone=us-central1-b
+export TPU_NAME=gestures-tpu
