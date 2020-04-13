@@ -63,9 +63,9 @@ class Config:
         parser.add_argument('--data_dir', help='directory where the data is stored with the folder names = labels',
                             default='/home/tantsevov/diploma/data/sign-language-between-0-9/')
         parser.add_argument('--logs_dir', help='directory where the logs are being stored',
-                            default='logs/' + datetime.now().strftime('%Y%m%d-%H%M%S'))
+                            default='logs' + datetime.now().strftime('%Y%m%d-%H%M%S'))
         parser.add_argument('--model_dir', help='directory where the logs are being stored',
-                            default='model/')
+                            default='model')
         parser.add_argument('--checkpoint_file', help='define the folder where the checkpoints of the models are being saved',
                             default='ckpt/weights.ckpt')  # https://github.com/keras-team/keras/issues/10652 (no '{}' are allowed in the filename path
         parser.add_argument("--show_model_summary", type=str2bool, nargs='?',
@@ -90,7 +90,7 @@ class Config:
                             help='The routing algorithm used in the capsule layer. (standard: \'scalar_product\', min-max: \'min_max\')',
                             default='scalar_product')
         parser.add_argument('--plots_dir', help='The folder where all the plots are being saved',
-                            default='plots/')
+                            default='plots')
         parser.add_argument('--learning_rate', help='Specify the learning rate for the training. (integer)',
                             default=0.001, type=int)
         parser.add_argument("--debug_mode_on", type=str2bool, nargs='?',
