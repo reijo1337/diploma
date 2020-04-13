@@ -2,6 +2,7 @@ import os
 from datetime import datetime
 
 import matplotlib.image as mpimg
+from absl import logging, app
 
 from analitics import fit_history_plot, evaluation_results, plot_prediction, save_model_summary
 from classifier.capsnet import CapsNet
@@ -58,7 +59,7 @@ def store_config(name, config, path):
         f.write(data)
 
 
-if __name__ == "__main__":
+def main(_):
     config = Config()
     store_config('capsule network', config, config.PLOTS_DIR)
 
@@ -116,3 +117,8 @@ if __name__ == "__main__":
     # model summary
     save_model_summary(model, config.PLOTS_DIR)
     model.summary()
+
+
+if __name__ == "__main__":
+    logging.set_verbosity(logging.INFO)
+    app.run(main)
