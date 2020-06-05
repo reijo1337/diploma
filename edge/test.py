@@ -2,6 +2,7 @@ import os
 import time
 import unittest
 
+import cv2
 import matplotlib
 import pandas as pd
 import matplotlib.image as mpimg
@@ -10,13 +11,15 @@ import numpy as np
 import edge.canny_filter.canny_edge_detector as ced
 
 from edge.canny_filter.utils.utils import rgb2gray
-from edge.opencv_filter.opencv import opencv, skel
+from edge.opencv_filter.opencv import opencv, skel, shape
 from edge.skelet_dnn.main import skeleton
 from edge.sobel import Sobel
 from edge.prewitt import Prewitt
 from edge.roberts import Roberts
 from PIL import Image
 from scipy.ndimage.filters import convolve
+
+from preprocessing.detector import skin_detector
 
 asl_dataset = "../data/dataset/asl-alphabet/asl_alphabet_test"
 datamix_dataset = "../data/dataset/data_mix_300/test"
@@ -48,25 +51,25 @@ class MyTestCase(unittest.TestCase):
     @staticmethod
     def test_canny():
         path = "../data/temp2"
-        original = mpimg.imread(os.path.join(path, "bmstu.jpg"))
+        original = mpimg.imread(os.path.join(path, "bmstu.png"))
         original_gray = rgb2gray(original)
-        Image.fromarray(original_gray).convert('RGB').save(os.path.join(path, "bmstu_gray.jpg"))
+        Image.fromarray(original_gray).convert('RGB').save(os.path.join(path, "bmstu_gray.png"))
         detector = ced.cannyEdgeDetector([original_gray], sigma=1.0, kernel_size=5, lowthreshold=0.03,
                                          highthreshold=0.07, weak_pixel=100)
         smoothed1 = convolve(original_gray, detector.gaussian_kernel(5, 1.0))
-        Image.fromarray(smoothed1).convert('RGB').save(os.path.join(path, "bmstu_smoothed.jpg"))
+        Image.fromarray(smoothed1).convert('RGB').save(os.path.join(path, "bmstu_smoothed.png"))
 
         gradient_mat2, theta_mat2 = detector.sobel_filters(smoothed1)
-        Image.fromarray(gradient_mat2).convert('RGB').save(os.path.join(path, "bmstu_gradient.jpg"))
+        Image.fromarray(gradient_mat2).convert('RGB').save(os.path.join(path, "bmstu_gradient.png"))
 
         non_max3 = detector.non_max_suppression(gradient_mat2, theta_mat2)
-        Image.fromarray(non_max3).convert('RGB').save(os.path.join(path, "bmstu_non_max.jpg"))
+        Image.fromarray(non_max3).convert('RGB').save(os.path.join(path, "bmstu_non_max.png"))
 
         threshold4 = detector.threshold(non_max3)
-        Image.fromarray(threshold4).convert('RGB').save(os.path.join(path, "bmstu_threshold.jpg"))
+        Image.fromarray(threshold4).convert('RGB').save(os.path.join(path, "bmstu_threshold.png"))
 
         final5 = detector.hysteresis(threshold4)
-        Image.fromarray(final5).convert('RGB').save(os.path.join(path, "bmstu_final.jpg"))
+        Image.fromarray(final5).convert('RGB').save(os.path.join(path, "bmstu_final.png"))
 
     @staticmethod
     def test_compare():
@@ -152,6 +155,28 @@ class MyTestCase(unittest.TestCase):
         result.to_csv(os.path.join(output_path, "result.csv"))
         print(f'total time: {time.time() - start_time}')
 
+    @staticmethod
+    def test_shape():
+        shape_path = "../data/asl-alphabet/shape"
+        for root, dirs, files in os.walk("../data/asl-alphabet/asl_alphabet_train/asl_alphabet_train"):
+            for name in files:
+                label = root.split("/")[-1]
+                directory = shape_path + "/" + label
+                if not os.path.exists(directory):
+                    os.makedirs(directory)
+                img = cv2.imread(os.path.join(root, name))
+                img = cv2.resize(img, dsize=(img.shape[0] // 3, img.shape[1] // 3), interpolation=cv2.INTER_CUBIC)
+                img = skin_detector(img)
+                cv2.imwrite(directory+"/"+name, img)
 
 if __name__ == '__main__':
-    unittest.main()
+    shape_path = "../data/asl-alphabet/shape"
+    for root, dirs, files in os.walk("../data/asl-alphabet/asl_alphabet_train/asl_alphabet_train"):
+        for name in files:
+            label = root.split("/")[-1]
+            directory = shape_path + "/" + label
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            img = cv2.imread(os.path.join(root, name))
+            img = shape(img)
+            cv2.imwrite(directory+"/"+name, img)

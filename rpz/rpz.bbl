@@ -1,0 +1,219 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{}\else\fi
+\ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
+
+\bibitem{Suharjito}
+\selectlanguageifdefined{english}
+Sign Language Recognition Application Systems for Deaf-Mute People: A Review
+  Based on Input-Process-Output~/ Suharjito~Suharjito, Ricky~Anderson,
+  Fanny~Wiryana et~al.~// \BibEmph{Procedia Computer Science}. ---
+\newblock 2017. --- 12. ---
+\newblock Vol. 116. ---
+\newblock Pp.~441--448.
+
+\bibitem{Wang}
+\selectlanguageifdefined{english}
+Fast sign language recognition benefited from low rank approximation~/
+  Hanjie~Wang, Xiujuan~Chai, Yu~Zhou, Xilin~Chen. ---
+\newblock 2015. --- 07.
+
+\bibitem{Mohandes}
+\selectlanguageifdefined{english}
+\BibEmph{Mohandes,~Mohamed}. Arabic Sign Language Recognition using the Leap
+  Motion Controller~/ Mohamed~Mohandes, Salihu~Oladimeji, Mohamed~Deriche. ---
+\newblock 2014. --- 06.
+
+\bibitem{smartfones}
+\selectlanguageifdefined{english}
+HOW MANY SMARTPHONES ARE IN THE WORLD? \BibUrl{
+  https://www.bankmycell.com/blog/how-many-phones-are-in-the-world}.
+
+\bibitem{Zhang}
+\selectlanguageifdefined{english}
+A vision-based sign language recognition system using tied-mixture density
+  HMM~/ Liang-Guo~Zhang, Yiqiang~Chen, Gaolin~Fang et~al. ---
+\newblock 2004. --- 01. ---
+\newblock Pp.~198--204.
+
+\bibitem{Sobel}
+\selectlanguageifdefined{english}
+\BibEmph{Sobel,~Irwin}. An Isotropic 3x3 Image Gradient Operator~/
+  Irwin~Sobel~// \BibEmph{Presentation at Stanford A.I. Project 1968}. ---
+\newblock 2014. --- 02.
+
+\bibitem{Prewitt}
+\selectlanguageifdefined{english}
+\BibEmph{Prewitt,~Judith M.~S.} Object Enhancement and Extraction Picture
+  Processing and Psychopictorics~/ Judith M.~S.~Prewitt~// \BibEmph{Academic}.
+  ---
+\newblock 1970. ---
+\newblock Pp.~75--149.
+
+\bibitem{Roberts}
+\selectlanguageifdefined{english}
+\BibEmph{Roberts,~Lawrence}. Machine Perception of Three-Dimensional Solids~/
+  Lawrence~Roberts. ---
+\newblock 1963. --- 01.
+
+\bibitem{Canny}
+\selectlanguageifdefined{english}
+\BibEmph{Canny,~John}. A Computational Approach To Edge Detection~/
+  John~Canny~// \BibEmph{Pattern Analysis and Machine Intelligence, IEEE
+  Transactions on}. ---
+\newblock 1986. --- 12. ---
+\newblock Vol. PAMI-8. ---
+\newblock Pp.~679 -- 698.
+
+\bibitem{Phung}
+\selectlanguageifdefined{english}
+\BibEmph{Phung,~S.L.} Skin segmentation using color and edge information~/
+  S.L.~Phung, Abdesselam~Bouzerdoum, Douglas~Chai. ---
+\newblock 2003. --- 08. ---
+\newblock Pp.~525 -- 528 vol.1.
+
+\bibitem{Siddharth}
+\selectlanguageifdefined{english}
+\BibEmph{Siddharth,~Joshi}. Face detection~/ Joshi~Siddharth,
+  Srivastava~Gaurav~// \BibEmph{E368: Digital Image Processing}. ---
+\newblock 2003. ---
+\newblock Pp.~101 -- 112.
+
+\bibitem{DIP}
+\selectlanguageifdefined{english}
+\BibEmph{Gonzalez,~Rafael~C.} Digital Image Processing~/ Rafael~C.~Gonzalez,
+  Richard~E.~Woods. ---
+\newblock Third edition. ---
+\newblock Pearson Prentice Hall, 2008. ---
+\newblock Pp.~631 -- 635.
+
+\bibitem{DNN}
+\selectlanguageifdefined{english}
+Hand Keypoint Detection in Single Images using Multiview Bootstrapping~/
+  Tomas~Simon, Hanbyul~Joo, Iain~Matthews, Yaser~Sheikh. ---
+\newblock 2017. --- 04.
+
+\bibitem{Tantsevov}
+\selectlanguageifdefined{english}
+\BibEmph{Танцевов,~Григорий~Михайлович}.
+  Исследование алгоритмов предобработки
+  изображения кисти руки, применимых к
+  распознаванию жестовых символов~/
+  Григорий~Михайлович~Танцевов,
+  Константин~Анатольевич~Майков. ---
+\newblock 2020. --- 01. ---
+\newblock Pp.~61--74.
+
+\bibitem{Gil}
+\selectlanguageifdefined{english}
+Hand Detection and Tracking Using the Skeleton of the Blob for Medical
+  Rehabilitation Applications~/ Pedro~Gil-Jiménez, Beatriz~Losilla-López,
+  Rafael~Torres et~al. ---
+\newblock 2012. --- 06. ---
+\newblock Pp.~130--137.
+
+\bibitem{Kasprzak}
+\selectlanguageifdefined{english}
+\BibEmph{Kasprzak,~Włodzimierz}. Hand Gesture Recognition in Image Sequences
+  Using Active Contours and HMMs~/ Włodzimierz~Kasprzak, Artur~Wilkowski,
+  Karol~Czapnik. ---
+\newblock 2009. --- 01. ---
+\newblock Pp.~248--255.
+
+\bibitem{Tewari2012AVR}
+\selectlanguageifdefined{english}
+\BibEmph{Kharate,~Gajanan}. Vision based multi-feature hand gesture recognition
+  for indian sign language manual signs~/ Gajanan~Kharate, Archana~Ghotkar~//
+  \BibEmph{International Journal on Smart Sensing and Intelligent Systems}. ---
+\newblock 2016. --- 03. ---
+\newblock Vol.~9. ---
+\newblock Pp.~124--147.
+
+\bibitem{Karn}
+\selectlanguageifdefined{english}
+Hand gesture recognition using self organizing map for Human Computer
+  Interaction~/ Ujjwal~Karn, Nagaraj~Bhat, Y.V.~Venkatesh, Dhruv~Vig. ---
+\newblock 2013. --- 08.
+
+\bibitem{Potkin}
+\selectlanguageifdefined{english}
+\BibEmph{Potkin,~Oleg}. Static gestures classification using Convolutional
+  Neural Networks on the example of the Russian Sign Language~/ Oleg~Potkin,
+  Andrey~Philippovich. ---
+\newblock 2018. --- 06.
+
+\bibitem{10.1007/978-3-319-16178-5_40}
+\selectlanguageifdefined{english}
+Sign Language Recognition Using Convolutional Neural Networks~/ Lionel~Pigou,
+  Sander~Dieleman, Pieter-Jan~Kindermans, Benjamin~Schrauwen~// Computer Vision
+  - ECCV 2014 Workshops~/ Ed. by Lourdes~Agapito, Michael~M.~Bronstein,
+  Carsten~Rother. ---
+\newblock Cham: Springer International Publishing, 2015. ---
+\newblock Pp.~572--578.
+
+\bibitem{Helske}
+\selectlanguageifdefined{english}
+\BibEmph{Helske,~Jouni}. MINIMUM DESCRIPTION LENGTH BASED HIDDEN MARKOV MODEL
+  CLUSTERING FOR LIFE SEQUENCE ANALYSIS~/ Jouni~Helske, Mervi~Eerola,
+  Ioan~Tabus. ---
+\newblock 2010. --- 08.
+
+\bibitem{Fridman}
+\selectlanguageifdefined{english}
+\BibEmph{Fridman,~Moshe}. Hidden Markov Model Regression~/ Moshe~Fridman. ---
+\newblock 1997. --- 01.
+
+\bibitem{Benyacoub}
+\selectlanguageifdefined{english}
+Classification with hidden markov model~/ B.~Benyacoub, S.~ElBernoussi,
+  A.~Zoglat, Ismail~El~Moudden~// \BibEmph{Applied Mathematical Sciences}. ---
+\newblock 2014. --- 01. ---
+\newblock Pp.~2483--2496.
+
+\bibitem{Gao}
+\selectlanguageifdefined{english}
+A Chinese sign language recognition system based on SOFM/SRN/HMM~/ Wen~Gao,
+  Gaolin~Fang, Debin~Zhao, Yiqiang~Chen~// \BibEmph{Pattern Recognition}. ---
+\newblock 2004. --- 12. ---
+\newblock Vol.~37. ---
+\newblock Pp.~2389--2402.
+
+\bibitem{Hubel}
+\selectlanguageifdefined{english}
+\BibEmph{Hubel,~D.~H.} Receptive fields and functional architecture of monkey
+  striate cortex~/ D.~H.~Hubel, T.~N.~Wiesel. ---
+\newblock 1968.
+
+\bibitem{Starner}
+\selectlanguageifdefined{english}
+\BibEmph{Starner,~Thad}. Visual Recognition of American Sign Language Using
+  Hidden Markov Models~/ Thad~Starner, Massachusetts~Group. ---
+\newblock 1995. --- 05.
+
+\bibitem{Garcia}
+\selectlanguageifdefined{english}
+\BibEmph{Garcia,~Brandon}. Real-time American Sign Language Recognition with
+  Convolutional Neural Networks~/ Brandon~Garcia, Sigberto~Alarcon~Viesca. ---
+\newblock 2016.
+
+\bibitem{Kolkur}
+\selectlanguageifdefined{english}
+Human Skin Detection Using RGB, HSV and YCbCr Color Models~/ S.~Kolkur,
+  Dhananjay~Kalbande, P.~Shimpi et~al. ---
+\newblock 2017. --- 08.
+
+\bibitem{sabour2017dynamic}
+\selectlanguageifdefined{english}
+\BibEmph{Sabour,~Sara}. Dynamic Routing Between Capsules. ---
+\newblock 2017.
+
+\bibitem{em}
+\selectlanguageifdefined{english}
+\BibEmph{Hinton,~Geoffrey}. Matrix capsules with EM routing. ---
+\newblock 2018.
+
+\end{thebibliography}

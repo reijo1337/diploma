@@ -1,123 +1,170 @@
 import os
-from datetime import datetime
+from datetime import timedelta
+from time import time
+from tkinter import Tk, Label, Button, Frame
+from tkinter.ttk import Combobox
+from tkinter import filedialog as fd
+from keras.models import load_model
+from PIL import Image, ImageTk
+import cv2
+from PIL import ImageTk
+import  numpy as np
 
-from skimage.transform import rescale, resize, downscale_local_mean
-import matplotlib.image as mpimg
-
-from analitics import fit_history_plot, evaluation_results, plot_prediction, save_model_summary
 from classifier.capsnet import CapsNet
-from config import Config
-from edge.opencv_filter.opencv import shape
-from sklearn.preprocessing import LabelBinarizer
-import numpy as np
-import tensorflow as tf
-
-from utils import get_distribution_strategy, get_strategy_scope
+from preprocessing.detector import skin_detector
 
 
-def load_images(root_dir):
-    x_train = []
-    y_train = []
-    x_test = []
-    y_test = []
+class MyFirstGUI:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Демонстрация метода распознавания жестовых символов")
+        self.root.geometry("1000x600")
 
-    for root, dirs, files in os.walk("data/data_mix_300/data_mix_300/train"):
-        for name in files:
-            img = mpimg.imread(os.path.join(root, name))
-            label = root.split("/")[-1]
-            img = shape(img)
-            img = resize(img, (img.shape[0] // 3, img.shape[1] // 3),
-                         anti_aliasing=True)
-            x_train.append(img)
-            y_train.append(label)
+        self.cap = cv2.VideoCapture(0)
+        self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 400)
 
-    for root, dirs, files in os.walk("data/data_mix_300/data_mix_300/valid"):
-        for name in files:
-            img = mpimg.imread(os.path.join(root, name))
-            label = root.split("/")[-1]
-            img = shape(img)
-            img = resize(img, (img.shape[0] // 3, img.shape[1] // 3),
-                         anti_aliasing=True)
-            x_test.append(img)
-            y_test.append(label)
-    label_binarizer = LabelBinarizer()
-    unique_val = np.unique(np.array(y_test))
+        self.build_left()
+        self.build_center()
+        self.build_right()
 
-    y_train = label_binarizer.fit_transform(y_train)
-    y_test = label_binarizer.fit_transform(y_test)
-    x_test = np.array(x_test)
-    x_train = np.array(x_train)
+    def build_left(self):
+        self.left = Frame(self.root, borderwidth=1, relief="solid")
+        self.left.pack(side="left", expand=True, fill="both")
 
-    h, w = x_test.shape[1], x_test.shape[2]
+        self.left_choose_frame = Frame(self.left)
+        self.left_choose_frame.pack(side="top")
+        self.left_choose_label = Label(self.left_choose_frame, text="Способ получения изображения:")
+        self.left_choose_label.pack(side="left")
+        self.left_choose_combo = Combobox(self.left_choose_frame,
+                                          values=['Загрусить с диска', 'Снять с web-камеры'])
+        self.left_choose_combo.current(0)
+        self.left_choose_combo.bind("<<ComboboxSelected>>", self.switch_input)
+        self.left_choose_combo.pack(side="left")
 
-    x_train = x_train.reshape(x_train.shape[0], h, w, 1)
-    x_test = x_test.reshape(x_test.shape[0], x_test.shape[1], x_test.shape[2], 1)
-    x_train = x_train / 255
-    x_test = x_test / 255
-    return x_train, y_train, x_test, y_test, unique_val
+        self.left_input_frame = Frame(self.left)
+        self.left_input_frame.pack(side="top", expand=True, fill="both")
+        self.file_input()
 
+    def build_center(self):
+        self.center = Frame(self.root, borderwidth=1, relief="solid")
+        self.center.pack(side="left", expand=True, fill="both")
+        self.center_original_label = Label(self.center, text="Исходное изображение:")
+        self.center_original_label.pack()
+        self.center_original_image = Label(self.center)
+        self.center_original_image.pack()
+        self.center_processed_label = Label(self.center, text="Предобработанное изображение:")
+        self.center_processed_label.pack()
+        self.center_processed_image = Label(self.center)
+        self.center_processed_image.pack()
 
-def store_config(name, config, path):
-    data = str(name) + '\n' + str(config)
-    with open("data/data_mix_300/plots/" + datetime.now().strftime('%Y-%m-%d_%H-%M-%S_') + str('config') + '.txt', 'w') as f:
-        f.write(data)
+    def build_right(self):
+        self.right = Frame(root, borderwidth=1, relief="solid")
+        self.right.pack(side="left", expand=True, fill="both")
+        self.choose_model = Button(self.right, text="Загрузить модель с диска", command=self.load_model)
+        self.choose_model.pack()
+        self.result = Label(self.right)
+        self.result.pack()
+
+    def load_model(self):
+        filename = fd.askopenfilename(filetypes=(("Файлы моделей keras", "*.h5"),
+                                                 ("Все файлы", "*.*")))
+        print(filename)
+
+        self.model = CapsNet((60, 60, 1), 10, 3)
+        self.model.load_weights(filename)
+        filename, _ = os.path.split(filename)
+        filename, _ = os.path.split(filename)
+        filename, _ = os.path.split(filename)
+        filename = os.path.join(filename, "classes")
+        
+        if self.processed_image is not None:
+            self.process_image()
+
+    def process_image(self):
+        w, h = self.input_image.shape[0], self.input_image.shape[1]
+        scale = w / 250.
+        w /= scale
+        w = int(w)
+        h /= scale
+        h = int(h)
+
+        start = time()
+        self.processed_image = skin_detector(self.input_image)
+        data = cv2.resize(self.processed_image, dsize=(60, 60), interpolation=cv2.INTER_CUBIC)
+        data = data.reshape(1, 60, 60, 1)
+        y_pred = self.model.predict(data, batch_size=100)
+        b = np.zeros_like(y_pred)
+        b[np.arange(len(y_pred)), y_pred.argmax(1)] = 1
+        y_pred = np.around(b).astype(np.int)
+        end = time() - start
+
+        orig = cv2.cvtColor(self.input_image, cv2.COLOR_BGR2RGBA)
+        orig = cv2.resize(orig, dsize=(h, w), interpolation=cv2.INTER_CUBIC)
+        orig = Image.fromarray(orig)
+        origtk = ImageTk.PhotoImage(image=orig)
+        self.center_original_image.imgtk = origtk
+        self.center_original_image.configure(image=origtk)
+
+        proc = cv2.resize(self.processed_image, dsize=(h, w), interpolation=cv2.INTER_CUBIC)
+        proc = Image.fromarray(proc)
+        proctk = ImageTk.PhotoImage(image=proc)
+        self.center_processed_image.imgtk = proctk
+        self.center_processed_image.configure(image=proctk)
+
+        result_test = f'Вывод классификатора: {y_pred[0]}\nКласс жеста: 9\nВремя обработки: {str(timedelta(seconds=end))}'
+        self.result.text = result_test
+        self.result.configure(text=result_test)
+        
+    def open_image(self):
+        filename = fd.askopenfilename(filetypes=(("Файлы PNG", "*.png"),
+                                                 ("Файлы JPEG", "*.jpg"),
+                                                 ("Файлы BMP", "*.bmp"),
+                                                 ("Все файлы", "*.*")))
+        self.input_image = cv2.imread(filename)
+        self.process_image()
+
+    def file_input(self):
+        for widget in self.left_input_frame.winfo_children():
+            widget.destroy()
+        self.dont_show_webcam = True
+        file_button = Button(self.left_input_frame, text="Открыть файл", command=self.open_image)
+        file_button.pack()
+
+    def webcam_input(self):
+        for widget in self.left_input_frame.winfo_children():
+            widget.destroy()
+        self.dont_show_webcam = False
+        self.webcam = Label(self.left_input_frame)
+        self.webcam.pack(expand=True, fill="both")
+        webcam_button = Button(self.left_input_frame, text="Сделать снимок", command=self.snap)
+        webcam_button.pack()
+        self.show_frame()
+
+    def switch_input(self, event):
+        if self.left_choose_combo.get() == 'Загрусить с диска':
+            self.file_input()
+        else:
+            self.webcam_input()
+
+    def show_frame(self):
+        if self.dont_show_webcam:
+            return
+        _, frame = self.cap.read()
+        frame = cv2.flip(frame, 1)
+        self.frame = frame[0:300, 0:200]
+        cv2image = cv2.cvtColor(self.frame, cv2.COLOR_BGR2RGB)
+        img = Image.fromarray(cv2image)
+        imgtk = ImageTk.PhotoImage(image=img)
+        self.webcam.imgtk = imgtk
+        self.webcam.configure(image=imgtk)
+        self.webcam.after(10, self.show_frame)
+
+    def snap(self):
+        self.input_image = self.frame
+        self.process_image()
 
 
 if __name__ == "__main__":
-    config = Config()
-    store_config('capsule network', config, config.PLOTS_DIR)
-
-    strategy = get_distribution_strategy(
-        distribution_strategy=config.DISTRIBUTION_STRATEGY,
-        num_gpus=config.NUM_GPUS,
-        tpu_address=config.TPU)
-
-    strategy_scope = get_strategy_scope(strategy)
-
-    with strategy_scope:
-        model = CapsNet(config)
-        model.compile(optimizer='adam',
-                      loss=tf.keras.losses.categorical_crossentropy,  # margin_loss
-                      metrics={'output_1': ['accuracy']})
-
-    imgs, labels, imgs_test, labels_test, classes = load_images(config.DATA_DIR)
-
-    validation_split = 0.2
-    imgs_train = imgs[:int((1 - validation_split) * len(imgs))]
-    labels_train = labels[:int((1 - validation_split) * len(labels))]
-    imgs_validation = imgs[int(-validation_split * len(imgs)):]
-    labels_validation = labels[int(-validation_split * len(labels)):]
-
-    config.CLASS_NAMES = classes
-
-    # callbacks
-    tensorboard = tf.keras.callbacks.TensorBoard(log_dir=config.LOGS_DIR)
-    checkpoint = tf.keras.callbacks.ModelCheckpoint(config.CHECKPOINT_FILE,
-                                                    save_best_only=True,
-                                                    save_weights_only=True,
-                                                    verbose=1)
-    # training
-    history = model.fit(x=imgs_train, y=labels_train,
-                        batch_size=config.BATCH_SIZE, epochs=config.NUM_EPOCH,
-                        validation_data=(imgs_validation, labels_validation),
-                        shuffle=True, callbacks=[tensorboard, checkpoint])
-    fit_history_plot(history, config.PLOTS_DIR)
-
-    # evaluate
-    [loss_, accuracy_] = model.evaluate(x=imgs_test, y=labels_test, batch_size=config.BATCH_SIZE, )
-    loss__ = 'loss:     {:.5}'.format(loss_)
-    accuracy__ = 'accuracy: {:.3%}'.format(accuracy_)
-    evaluation_results([loss__, accuracy__], config.PLOTS_DIR)
-
-    # prediction
-    labels_test_pred = model.predict(imgs_test)
-    pred = np.zeros_like(labels_test_pred)
-    for index, value in enumerate(np.argmax(labels_test_pred, axis=-1)):
-        pred[index][value] = 1.0
-    labels_test_str = config.CLASS_NAMES[np.where(labels_test.numpy() == 1.0)[1]]
-    labels_test_pred_str = config.CLASS_NAMES[np.where(pred == 1.0)[1]]
-    plot_prediction(imgs_test, labels_test_str, labels_test_pred_str, config.PLOTS_DIR)
-
-    # model summary
-    save_model_summary(model, config.PLOTS_DIR)
-    model.summary()
+    root = Tk()
+    my_gui = MyFirstGUI(root)
+    root.mainloop()
