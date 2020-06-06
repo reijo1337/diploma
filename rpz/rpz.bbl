@@ -188,23 +188,11 @@ A Chinese sign language recognition system based on SOFM/SRN/HMM~/ Wen~Gao,
   striate cortex~/ D.~H.~Hubel, T.~N.~Wiesel. ---
 \newblock 1968.
 
-\bibitem{Starner}
-\selectlanguageifdefined{english}
-\BibEmph{Starner,~Thad}. Visual Recognition of American Sign Language Using
-  Hidden Markov Models~/ Thad~Starner, Massachusetts~Group. ---
-\newblock 1995. --- 05.
-
 \bibitem{Garcia}
 \selectlanguageifdefined{english}
 \BibEmph{Garcia,~Brandon}. Real-time American Sign Language Recognition with
   Convolutional Neural Networks~/ Brandon~Garcia, Sigberto~Alarcon~Viesca. ---
 \newblock 2016.
-
-\bibitem{Kolkur}
-\selectlanguageifdefined{english}
-Human Skin Detection Using RGB, HSV and YCbCr Color Models~/ S.~Kolkur,
-  Dhananjay~Kalbande, P.~Shimpi et~al. ---
-\newblock 2017. --- 08.
 
 \bibitem{sabour2017dynamic}
 \selectlanguageifdefined{english}
@@ -215,5 +203,17 @@ Human Skin Detection Using RGB, HSV and YCbCr Color Models~/ S.~Kolkur,
 \selectlanguageifdefined{english}
 \BibEmph{Hinton,~Geoffrey}. Matrix capsules with EM routing. ---
 \newblock 2018.
+
+\bibitem{Kolkur}
+\selectlanguageifdefined{english}
+Human Skin Detection Using RGB, HSV and YCbCr Color Models~/ S.~Kolkur,
+  Dhananjay~Kalbande, P.~Shimpi et~al. ---
+\newblock 2017. --- 08.
+
+\bibitem{Starner}
+\selectlanguageifdefined{english}
+\BibEmph{Starner,~Thad}. Visual Recognition of American Sign Language Using
+  Hidden Markov Models~/ Thad~Starner, Massachusetts~Group. ---
+\newblock 1995. --- 05.
 
 \end{thebibliography}

@@ -7,11 +7,15 @@ A level-1 auxiliary file: 11-abbrev.aux
 A level-1 auxiliary file: 12-intro.aux
 A level-1 auxiliary file: 20-analysis.aux
 A level-1 auxiliary file: 30-design.aux
+A level-1 auxiliary file: 40-impl.aux
+A level-1 auxiliary file: 50-research.aux
+A level-1 auxiliary file: 80-conclusion.aux
 A level-1 auxiliary file: 81-biblio.aux
 The style file: gost780u.bst
 Database file #1: rpz.bib
 Warning--entry type for "smartfones" isn't style-file defined
 --line 34 of file rpz.bib
+Warning--I didn't find a database entry for "Starner0"
 Warning--empty journal in Wang
 Warning--empty booktitle in Mohandes
 Warning--empty booktitle in Zhang
@@ -25,12 +29,12 @@ Warning--empty journal in Potkin
 Warning--empty booktitle in Helske
 Warning--empty journal in Fridman
 Warning--empty journal in Hubel
-Warning--empty journal in Starner
 Warning--empty journal in Garcia
 Warning--empty booktitle in Kolkur
+Warning--empty journal in Starner
 You've used 30 entries,
             2674 wiz_defined-function locations,
-            827 strings with 9995 characters,
+            832 strings with 10054 characters,
 and the built_in function-call counts, 10040 in all, are:
 = -- 1237
 > -- 306
@@ -69,4 +73,4 @@ warning$ -- 16
 while$ -- 57
 width$ -- 32
 write$ -- 453
-(There were 17 warnings)
+(There were 18 warnings)
