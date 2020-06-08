@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.6)  6 JUN 2020 21:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.6)  8 JUN 2020 02:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1304,15 +1304,21 @@ File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
 \openout2 = `00-abstract.aux'.
 
 
-(./00-abstract.tex<<t2a.cmap>>) [5
+(./00-abstract.tex<<t2a.cmap>>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)) [5
 
 
-] (./rpz.toc<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+]
+(./rpz.toc<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1444,10 +1450,7 @@ Package pdftex.def Info: inc/img/bmstu_final.jpg  used on input line 140.
 (pdftex.def)             Requested size: 118.50705pt x 160.73537pt.
  [14 <./inc/img/canny-block.png>] [15 <./inc/img/bmstu_gray.jpg> <./inc/img/bms
 tu_smoothed.jpg> <./inc/img/bmstu_gradient.jpg> <./inc/img/bmstu_non_max.jpg> <
-./inc/img/bmstu_threshold.jpg> <./inc/img/bmstu_final.jpg>]
-(/usr/local/texlive/2020/texmf-dist/tex/latex/ucs/data/uni-0.def
-File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [16]
+./inc/img/bmstu_threshold.jpg> <./inc/img/bmstu_final.jpg>] [16]
 <inc/img/morf.png, id=411, 373.395pt x 201.75375pt>
 File: inc/img/morf.png Graphic file (type png)
 <use inc/img/morf.png>
@@ -1858,17 +1861,23 @@ Underfull \hbox (badness 2134) in paragraph at lines 41--42
  []
 
 [55 <./inc/img/research.png>]
-<inc/img/asl.png, id=831, 581.17125pt x 359.3425pt>
+<inc/img/asl.png, id=833, 921.4425pt x 372.39125pt>
 File: inc/img/asl.png Graphic file (type png)
 <use inc/img/asl.png>
-Package pdftex.def Info: inc/img/asl.png  used on input line 47.
-(pdftex.def)             Requested size: 483.69687pt x 299.07666pt.
-<inc/img/rsl_oleg.png, id=832, 616.3025pt x 380.42125pt>
+Package pdftex.def Info: inc/img/asl.png  used on input line 49.
+(pdftex.def)             Requested size: 435.32422pt x 175.92738pt.
+<inc/img/rsl_oleg.png, id=834, 921.4425pt x 372.39125pt>
 File: inc/img/rsl_oleg.png Graphic file (type png)
 <use inc/img/rsl_oleg.png>
-Package pdftex.def Info: inc/img/rsl_oleg.png  used on input line 55.
-(pdftex.def)             Requested size: 483.69687pt x 298.57327pt.
-) [56 <./inc/img/asl.png>] [57 <./inc/img/rsl_oleg.png>]
+Package pdftex.def Info: inc/img/rsl_oleg.png  used on input line 56.
+(pdftex.def)             Requested size: 435.32422pt x 175.92738pt.
+<inc/img/rsl_hse.png, id=835, 921.4425pt x 372.39125pt>
+File: inc/img/rsl_hse.png Graphic file (type png)
+<use inc/img/rsl_hse.png>
+Package pdftex.def Info: inc/img/rsl_hse.png  used on input line 63.
+(pdftex.def)             Requested size: 435.32422pt x 175.92738pt.
+) [56 <./inc/img/asl.png> <./inc/img/rsl_oleg.png>] [57 <./inc/img/rsl_hse.png>
+]
 \openout2 = `80-conclusion.aux'.
 
  (./80-conclusion.tex) [58
@@ -1878,7 +1887,8 @@ Package pdftex.def Info: inc/img/rsl_oleg.png  used on input line 55.
 ]
 \openout2 = `81-biblio.aux'.
 
- (./81-biblio.tex (./rpz.bbl
+ (./81-biblio.tex
+(./rpz.bbl
 Underfull \hbox (badness 1062) in paragraph at lines 27--30
 \T2A/cmr/m/n/14.4 Leap Mo^^?tion Con^^?troller / Mo^^?hamed Mo^^?han^^?des, Sal
 ^^?i^^?hu Oladime^^?ji, Mo^^?
@@ -1926,7 +1936,7 @@ o.aux) (./20-analysis.aux) (./30-design.aux) (./40-impl.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `rpz.out' has not changed.
-(rerunfilecheck)             Checksum: 4E8FAA9B8558D6A1AE74EE08C905E09D;10957.
+(rerunfilecheck)             Checksum: 18E705D5AC16D12AD41B6EB75D9676DA;10957.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1934,10 +1944,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
- 30715 strings out of 480608
- 516906 string characters out of 5903631
- 981891 words of memory out of 5000000
- 45638 multiletter control sequences out of 15000+600000
+ 30725 strings out of 480608
+ 517095 string characters out of 5903631
+ 982112 words of memory out of 5000000
+ 45646 multiletter control sequences out of 15000+600000
  542608 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,18n,87p,2999b,1952s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1960,10 +1970,10 @@ e/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2020/t
 exmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on rpz.pdf (61 pages, 3637310 bytes).
+Output written on rpz.pdf (61 pages, 3667643 bytes).
 PDF statistics:
- 986 PDF objects out of 1000 (max. 8388607)
- 812 compressed objects within 9 object streams
- 262 named destinations out of 1000 (max. 500000)
- 614 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 991 PDF objects out of 1000 (max. 8388607)
+ 815 compressed objects within 9 object streams
+ 263 named destinations out of 1000 (max. 500000)
+ 619 words of extra memory for PDF output out of 10000 (max. 10000000)
 
