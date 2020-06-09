@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.6)  8 JUN 2020 02:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.6)  9 JUN 2020 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1846,36 +1846,40 @@ File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
 <inc/img/research.png, id=821, 1574.88374pt x 876.27374pt>
 File: inc/img/research.png Graphic file (type png)
 <use inc/img/research.png>
-Package pdftex.def Info: inc/img/research.png  used on input line 27.
+Package pdftex.def Info: inc/img/research.png  used on input line 26.
 (pdftex.def)             Requested size: 483.69687pt x 269.12833pt.
 
-Underfull \hbox (badness 2073) in paragraph at lines 41--42
+Underfull \hbox (badness 2073) in paragraph at lines 40--41
 []\T2A/cmr/m/n/14.4 Исследования про^^?во^^?ди^^?лись с ис^^?поль^^?зо^^?ва^^?н
 и^^?ем плат^^?фор^^?мы Google
  []
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 41--42
+Underfull \hbox (badness 2134) in paragraph at lines 40--41
 \T2A/cmr/m/n/14.4 Colaboratory, предо^^?став^^?ля^^?ю^^?щая бес^^?плат^^?ное вы
 ^^?пол^^?не^^?ние фай^^?лов ipython
  []
 
 [55 <./inc/img/research.png>]
-<inc/img/asl.png, id=833, 921.4425pt x 372.39125pt>
+<inc/img/asl.png, id=834, 921.4425pt x 372.39125pt>
 File: inc/img/asl.png Graphic file (type png)
 <use inc/img/asl.png>
-Package pdftex.def Info: inc/img/asl.png  used on input line 49.
+Package pdftex.def Info: inc/img/asl.png  used on input line 48.
 (pdftex.def)             Requested size: 435.32422pt x 175.92738pt.
-<inc/img/rsl_oleg.png, id=834, 921.4425pt x 372.39125pt>
+<inc/img/rsl_oleg.png, id=835, 921.4425pt x 372.39125pt>
 File: inc/img/rsl_oleg.png Graphic file (type png)
 <use inc/img/rsl_oleg.png>
-Package pdftex.def Info: inc/img/rsl_oleg.png  used on input line 56.
+Package pdftex.def Info: inc/img/rsl_oleg.png  used on input line 55.
 (pdftex.def)             Requested size: 435.32422pt x 175.92738pt.
-<inc/img/rsl_hse.png, id=835, 921.4425pt x 372.39125pt>
+<inc/img/rsl_hse.png, id=836, 921.4425pt x 372.39125pt>
 File: inc/img/rsl_hse.png Graphic file (type png)
 <use inc/img/rsl_hse.png>
-Package pdftex.def Info: inc/img/rsl_hse.png  used on input line 63.
+Package pdftex.def Info: inc/img/rsl_hse.png  used on input line 62.
 (pdftex.def)             Requested size: 435.32422pt x 175.92738pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ) [56 <./inc/img/asl.png> <./inc/img/rsl_oleg.png>] [57 <./inc/img/rsl_hse.png>
 ]
 \openout2 = `80-conclusion.aux'.
@@ -1887,8 +1891,7 @@ Package pdftex.def Info: inc/img/rsl_hse.png  used on input line 63.
 ]
 \openout2 = `81-biblio.aux'.
 
- (./81-biblio.tex
-(./rpz.bbl
+ (./81-biblio.tex (./rpz.bbl
 Underfull \hbox (badness 1062) in paragraph at lines 27--30
 \T2A/cmr/m/n/14.4 Leap Mo^^?tion Con^^?troller / Mo^^?hamed Mo^^?han^^?des, Sal
 ^^?i^^?hu Oladime^^?ji, Mo^^?
@@ -1945,8 +1948,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
  30725 strings out of 480608
- 517095 string characters out of 5903631
- 982112 words of memory out of 5000000
+ 517094 string characters out of 5903631
+ 982113 words of memory out of 5000000
  45646 multiletter control sequences out of 15000+600000
  542608 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1970,10 +1973,10 @@ e/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2020/t
 exmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on rpz.pdf (61 pages, 3667643 bytes).
+Output written on rpz.pdf (61 pages, 3668494 bytes).
 PDF statistics:
- 991 PDF objects out of 1000 (max. 8388607)
- 815 compressed objects within 9 object streams
+ 995 PDF objects out of 1000 (max. 8388607)
+ 819 compressed objects within 9 object streams
  263 named destinations out of 1000 (max. 500000)
  619 words of extra memory for PDF output out of 10000 (max. 10000000)
 
