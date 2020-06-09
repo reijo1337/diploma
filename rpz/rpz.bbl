@@ -139,6 +139,12 @@ Hand gesture recognition using self organizing map for Human Computer
   Interaction~/ Ujjwal~Karn, Nagaraj~Bhat, Y.V.~Venkatesh, Dhruv~Vig. ---
 \newblock 2013. --- 08.
 
+\bibitem{Starner}
+\selectlanguageifdefined{english}
+\BibEmph{Starner,~Thad}. Visual Recognition of American Sign Language Using
+  Hidden Markov Models~/ Thad~Starner, Massachusetts~Group. ---
+\newblock 1995. --- 05.
+
 \bibitem{Potkin}
 \selectlanguageifdefined{english}
 \BibEmph{Potkin,~Oleg}. Static gestures classification using Convolutional
@@ -209,11 +215,5 @@ A Chinese sign language recognition system based on SOFM/SRN/HMM~/ Wen~Gao,
 Human Skin Detection Using RGB, HSV and YCbCr Color Models~/ S.~Kolkur,
   Dhananjay~Kalbande, P.~Shimpi et~al. ---
 \newblock 2017. --- 08.
-
-\bibitem{Starner}
-\selectlanguageifdefined{english}
-\BibEmph{Starner,~Thad}. Visual Recognition of American Sign Language Using
-  Hidden Markov Models~/ Thad~Starner, Massachusetts~Group. ---
-\newblock 1995. --- 05.
 
 \end{thebibliography}

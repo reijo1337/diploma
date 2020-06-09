@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.6)  10 JUN 2020 00:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.20)  10 JUN 2020 01:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **rpz.tex
 (./rpz.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06> (./G7-32.cls
+L3 programming layer <2020-04-06> (./G7-32.cls
 Document Class: G7-32 2003/07/01 v1.0 Non Standard LaTeX document class
 (./G2-105.sty
 Package: G2-105 2003/07/07 v1.00 General reqs. GOST 2.105-95
@@ -1127,7 +1127,8 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 )
 (./rpz.aux (./00-abstract.aux) (./10-defines.aux) (./11-abbrev.aux)
 (./12-intro.aux) (./20-analysis.aux) (./30-design.aux) (./40-impl.aux)
-(./50-research.aux) (./80-conclusion.aux) (./81-biblio.aux))
+(./50-research.aux) (./80-conclusion.aux) (./81-biblio.aux) (./90-appendix1.aux
+))
 \openout1 = `rpz.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -1150,8 +1151,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/ucs/ucsencs.def
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -1253,7 +1253,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-<title.pdf, id=195, 597.50786pt x 845.01837pt>
+<title.pdf, id=199, 597.50786pt x 845.01837pt>
 File: title.pdf Graphic file (type pdf)
 <use title.pdf>
 Package pdftex.def Info: title.pdf  used on input line 23.
@@ -1262,7 +1262,7 @@ File: title.pdf Graphic file (type pdf)
 <use title.pdf>
 Package pdftex.def Info: title.pdf  used on input line 23.
 (pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
-<title.pdf, id=198, page=1, 597.50786pt x 845.01837pt>
+<title.pdf, id=202, page=1, 597.50786pt x 845.01837pt>
 File: title.pdf Graphic file (type pdf)
 <use title.pdf, page 1>
 Package pdftex.def Info: title.pdf , page1 used on input line 23.
@@ -1403,7 +1403,7 @@ LaTeX Font Warning: Font shape `PU/cmr/m/up' undefined
 
 
 ]
-<inc/img/sobel_block.png, id=345, 422.57875pt x 613.29124pt>
+<inc/img/sobel_block.png, id=350, 422.57875pt x 613.29124pt>
 File: inc/img/sobel_block.png Graphic file (type png)
 <use inc/img/sobel_block.png>
 Package pdftex.def Info: inc/img/sobel_block.png  used on input line 45.
@@ -1413,37 +1413,37 @@ Package pdftex.def Info: inc/img/sobel_block.png  used on input line 45.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12] [13 <./inc/img/sobel_block.png>]
-<inc/img/canny-block.png, id=375, 121.45375pt x 482.80376pt>
+<inc/img/canny-block.png, id=380, 121.45375pt x 482.80376pt>
 File: inc/img/canny-block.png Graphic file (type png)
 <use inc/img/canny-block.png>
 Package pdftex.def Info: inc/img/canny-block.png  used on input line 115.
 (pdftex.def)             Requested size: 72.55157pt x 288.40263pt.
-<inc/img/bmstu_gray.jpg, id=376, 580.1675pt x 786.94pt>
+<inc/img/bmstu_gray.jpg, id=381, 580.1675pt x 786.94pt>
 File: inc/img/bmstu_gray.jpg Graphic file (type jpg)
 <use inc/img/bmstu_gray.jpg>
 Package pdftex.def Info: inc/img/bmstu_gray.jpg  used on input line 122.
 (pdftex.def)             Requested size: 118.50705pt x 160.73537pt.
-<inc/img/bmstu_smoothed.jpg, id=377, 580.1675pt x 786.94pt>
+<inc/img/bmstu_smoothed.jpg, id=382, 580.1675pt x 786.94pt>
 File: inc/img/bmstu_smoothed.jpg Graphic file (type jpg)
 <use inc/img/bmstu_smoothed.jpg>
 Package pdftex.def Info: inc/img/bmstu_smoothed.jpg  used on input line 126.
 (pdftex.def)             Requested size: 118.50705pt x 160.73537pt.
-<inc/img/bmstu_gradient.jpg, id=378, 580.1675pt x 786.94pt>
+<inc/img/bmstu_gradient.jpg, id=383, 580.1675pt x 786.94pt>
 File: inc/img/bmstu_gradient.jpg Graphic file (type jpg)
 <use inc/img/bmstu_gradient.jpg>
 Package pdftex.def Info: inc/img/bmstu_gradient.jpg  used on input line 129.
 (pdftex.def)             Requested size: 118.50705pt x 160.73537pt.
-<inc/img/bmstu_non_max.jpg, id=379, 580.1675pt x 786.94pt>
+<inc/img/bmstu_non_max.jpg, id=384, 580.1675pt x 786.94pt>
 File: inc/img/bmstu_non_max.jpg Graphic file (type jpg)
 <use inc/img/bmstu_non_max.jpg>
 Package pdftex.def Info: inc/img/bmstu_non_max.jpg  used on input line 133.
 (pdftex.def)             Requested size: 118.50705pt x 160.73537pt.
-<inc/img/bmstu_threshold.jpg, id=380, 580.1675pt x 786.94pt>
+<inc/img/bmstu_threshold.jpg, id=385, 580.1675pt x 786.94pt>
 File: inc/img/bmstu_threshold.jpg Graphic file (type jpg)
 <use inc/img/bmstu_threshold.jpg>
 Package pdftex.def Info: inc/img/bmstu_threshold.jpg  used on input line 136.
 (pdftex.def)             Requested size: 118.50705pt x 160.73537pt.
-<inc/img/bmstu_final.jpg, id=381, 580.1675pt x 786.94pt>
+<inc/img/bmstu_final.jpg, id=386, 580.1675pt x 786.94pt>
 File: inc/img/bmstu_final.jpg Graphic file (type jpg)
 <use inc/img/bmstu_final.jpg>
 Package pdftex.def Info: inc/img/bmstu_final.jpg  used on input line 140.
@@ -1451,25 +1451,25 @@ Package pdftex.def Info: inc/img/bmstu_final.jpg  used on input line 140.
  [14 <./inc/img/canny-block.png>] [15 <./inc/img/bmstu_gray.jpg> <./inc/img/bms
 tu_smoothed.jpg> <./inc/img/bmstu_gradient.jpg> <./inc/img/bmstu_non_max.jpg> <
 ./inc/img/bmstu_threshold.jpg> <./inc/img/bmstu_final.jpg>]
-<inc/img/preprocessing/good_orig.png, id=405, 96.36pt x 96.36pt>
+<inc/img/preprocessing/good_orig.png, id=410, 96.36pt x 96.36pt>
 File: inc/img/preprocessing/good_orig.png Graphic file (type png)
 <use inc/img/preprocessing/good_orig.png>
 Package pdftex.def Info: inc/img/preprocessing/good_orig.png  used on input lin
 e 166.
 (pdftex.def)             Requested size: 118.50705pt x 118.50735pt.
-<inc/img/preprocessing/good_res.png, id=406, 128.48pt x 128.48pt>
+<inc/img/preprocessing/good_res.png, id=411, 128.48pt x 128.48pt>
 File: inc/img/preprocessing/good_res.png Graphic file (type png)
 <use inc/img/preprocessing/good_res.png>
 Package pdftex.def Info: inc/img/preprocessing/good_res.png  used on input line
  170.
 (pdftex.def)             Requested size: 118.50705pt x 118.50885pt.
  [16]
-<inc/img/morf.png, id=420, 373.395pt x 201.75375pt>
+<inc/img/morf.png, id=425, 373.395pt x 201.75375pt>
 File: inc/img/morf.png Graphic file (type png)
 <use inc/img/morf.png>
 Package pdftex.def Info: inc/img/morf.png  used on input line 183.
 (pdftex.def)             Requested size: 290.22107pt x 156.8193pt.
-<inc/img/dil.png, id=422, 161.60374pt x 161.60374pt>
+<inc/img/dil.png, id=427, 161.60374pt x 161.60374pt>
 File: inc/img/dil.png Graphic file (type png)
 <use inc/img/dil.png>
 Package pdftex.def Info: inc/img/dil.png  used on input line 192.
@@ -1478,7 +1478,7 @@ Package pdftex.def Info: inc/img/dil.png  used on input line 192.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/eros.png, id=424, 161.60374pt x 161.60374pt>
+<inc/img/eros.png, id=429, 161.60374pt x 161.60374pt>
 File: inc/img/eros.png Graphic file (type png)
 <use inc/img/eros.png>
 Package pdftex.def Info: inc/img/eros.png  used on input line 201.
@@ -1488,7 +1488,7 @@ ng (PNG copy)> <./inc/img/morf.png>] [18 <./inc/img/dil.png> <./inc/img/eros.pn
 g>] (/usr/local/texlive/2020/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-<inc/img/handpose-demo-keypoints.jpg, id=445, 580.1675pt x 786.94pt>
+<inc/img/handpose-demo-keypoints.jpg, id=450, 580.1675pt x 786.94pt>
 File: inc/img/handpose-demo-keypoints.jpg Graphic file (type jpg)
 <use inc/img/handpose-demo-keypoints.jpg>
 Package pdftex.def Info: inc/img/handpose-demo-keypoints.jpg  used on input lin
@@ -1590,7 +1590,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--332
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/compare1.png, id=463, 2007.5pt x 2007.5pt>
+<inc/img/compare1.png, id=468, 2007.5pt x 2007.5pt>
 File: inc/img/compare1.png Graphic file (type png)
 <use inc/img/compare1.png>
 Package pdftex.def Info: inc/img/compare1.png  used on input line 343.
@@ -1599,7 +1599,7 @@ Package pdftex.def Info: inc/img/compare1.png  used on input line 343.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [20]
-<inc/img/compare2.png, id=479, 2007.5pt x 2007.5pt>
+<inc/img/compare2.png, id=484, 2007.5pt x 2007.5pt>
 File: inc/img/compare2.png Graphic file (type png)
 <use inc/img/compare2.png>
 Package pdftex.def Info: inc/img/compare2.png  used on input line 354.
@@ -1614,18 +1614,18 @@ Overfull \vbox (9.65585pt too high) has occurred while \output is active []
 
 [22] [23] [24 <./inc/img/compare1.png>] [25 <./inc/img/compare2.png>] [26]
 [27]
-<inc/img/cnn-first.png, id=550, 550.055pt x 615.29875pt>
+<inc/img/cnn-first.png, id=558, 550.055pt x 615.29875pt>
 File: inc/img/cnn-first.png Graphic file (type png)
 <use inc/img/cnn-first.png>
 Package pdftex.def Info: inc/img/cnn-first.png  used on input line 440.
-(pdftex.def)             Requested size: 290.22107pt x 324.65154pt.
- [28]
-<inc/img/pooling.png, id=562, 362.35374pt x 161.60374pt>
+(pdftex.def)             Requested size: 266.03474pt x 297.59332pt.
+ [28 <./inc/img/cnn-first.png>]
+<inc/img/pooling.png, id=569, 362.35374pt x 161.60374pt>
 File: inc/img/pooling.png Graphic file (type png)
 <use inc/img/pooling.png>
 Package pdftex.def Info: inc/img/pooling.png  used on input line 473.
 (pdftex.def)             Requested size: 290.22107pt x 129.43605pt.
- [29] [30 <./inc/img/cnn-first.png> <./inc/img/pooling.png>]
+ [29 <./inc/img/pooling.png>]
 Overfull \hbox (12.0pt too wide) in alignment at lines 499--504
 [] [] [] 
  []
@@ -1705,7 +1705,7 @@ Overfull \hbox (12.0pt too wide) in alignment at lines 509--521
 [] [] [] 
  []
 
-
+[30]
 Overfull \hbox (12.0pt too wide) in alignment at lines 527--532
 [] [] 
  []
@@ -1731,7 +1731,7 @@ Overfull \hbox (12.0pt too wide) in alignment at lines 537--543
  []
 
 [31]
-<inc/img/face_deformed.png, id=597, 712.6625pt x 377.41pt>
+<inc/img/face_deformed.png, id=605, 712.6625pt x 377.41pt>
 File: inc/img/face_deformed.png Graphic file (type png)
 <use inc/img/face_deformed.png>
 Package pdftex.def Info: inc/img/face_deformed.png  used on input line 554.
@@ -1748,7 +1748,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ] [36] [37] [38] [39]
-<inc/img/CapsNet.png, id=674, 726.715pt x 1036.87375pt>
+<inc/img/CapsNet.png, id=681, 726.715pt x 1036.87375pt>
 File: inc/img/CapsNet.png Graphic file (type png)
 <use inc/img/CapsNet.png>
 Package pdftex.def Info: inc/img/CapsNet.png  used on input line 202.
@@ -1761,7 +1761,7 @@ Package pdftex.def Info: inc/img/CapsNet.png  used on input line 202.
 
 
 ] [44]
-<inc/img/idef0.png, id=702, 765.86125pt x 416.55624pt>
+<inc/img/idef0.png, id=709, 765.86125pt x 416.55624pt>
 File: inc/img/idef0.png Graphic file (type png)
 <use inc/img/idef0.png>
 Package pdftex.def Info: inc/img/idef0.png  used on input line 90.
@@ -1771,18 +1771,18 @@ Package pdftex.def Info: inc/img/idef0.png  used on input line 90.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [45]
-<inc/img/arch.png, id=709, 433.62pt x 369.38pt>
+<inc/img/arch.png, id=716, 433.62pt x 369.38pt>
 File: inc/img/arch.png Graphic file (type png)
 <use inc/img/arch.png>
 Package pdftex.def Info: inc/img/arch.png  used on input line 99.
 (pdftex.def)             Requested size: 266.03474pt x 226.63472pt.
  [46 <./inc/img/idef0.png> <./inc/img/arch.png>]
-<inc/img/train_func.png, id=718, 618.31pt x 362.35374pt>
+<inc/img/train_func.png, id=725, 618.31pt x 362.35374pt>
 File: inc/img/train_func.png Graphic file (type png)
 <use inc/img/train_func.png>
 Package pdftex.def Info: inc/img/train_func.png  used on input line 108.
 (pdftex.def)             Requested size: 290.22107pt x 170.08511pt.
-<inc/img/run_test.png, id=720, 507.8975pt x 413.545pt>
+<inc/img/run_test.png, id=727, 507.8975pt x 413.545pt>
 File: inc/img/run_test.png Graphic file (type png)
 <use inc/img/run_test.png>
 Package pdftex.def Info: inc/img/run_test.png  used on input line 117.
@@ -1834,13 +1834,13 @@ $[]$
  []
 
 [49]
-<inc/img/graph.png, id=787, 315.1775pt x 969.6225pt>
+<inc/img/graph.png, id=794, 315.1775pt x 969.6225pt>
 File: inc/img/graph.png Graphic file (type png)
 <use inc/img/graph.png>
 Package pdftex.def Info: inc/img/graph.png  used on input line 163.
 (pdftex.def)             Requested size: 145.11053pt x 446.41644pt.
  [50 <./inc/img/graph.png>]
-<inc/img/main_start.png, id=796, 1003.75pt x 627.34375pt>
+<inc/img/main_start.png, id=803, 1003.75pt x 627.34375pt>
 File: inc/img/main_start.png Graphic file (type png)
 <use inc/img/main_start.png>
 Package pdftex.def Info: inc/img/main_start.png  used on input line 196.
@@ -1850,12 +1850,12 @@ Package pdftex.def Info: inc/img/main_start.png  used on input line 196.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [51]
-<inc/img/main_webcam.png, id=805, 1003.75pt x 627.34375pt>
+<inc/img/main_webcam.png, id=812, 1003.75pt x 627.34375pt>
 File: inc/img/main_webcam.png Graphic file (type png)
 <use inc/img/main_webcam.png>
 Package pdftex.def Info: inc/img/main_webcam.png  used on input line 207.
 (pdftex.def)             Requested size: 338.58632pt x 211.61887pt.
-<inc/img/main.png, id=807, 1003.75pt x 627.34375pt>
+<inc/img/main.png, id=814, 1003.75pt x 627.34375pt>
 File: inc/img/main.png Graphic file (type png)
 <use inc/img/main.png>
 Package pdftex.def Info: inc/img/main.png  used on input line 216.
@@ -1875,7 +1875,7 @@ File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
 
 
 ]
-<inc/img/research.png, id=830, 1574.88374pt x 876.27374pt>
+<inc/img/research.png, id=837, 1574.88374pt x 876.27374pt>
 File: inc/img/research.png Graphic file (type png)
 <use inc/img/research.png>
 Package pdftex.def Info: inc/img/research.png  used on input line 26.
@@ -1893,17 +1893,17 @@ Underfull \hbox (badness 2134) in paragraph at lines 40--41
  []
 
 [55 <./inc/img/research.png>]
-<inc/img/asl.png, id=843, 921.4425pt x 372.39125pt>
+<inc/img/asl.png, id=850, 921.4425pt x 372.39125pt>
 File: inc/img/asl.png Graphic file (type png)
 <use inc/img/asl.png>
 Package pdftex.def Info: inc/img/asl.png  used on input line 48.
 (pdftex.def)             Requested size: 435.32422pt x 175.92738pt.
-<inc/img/rsl_oleg.png, id=844, 921.4425pt x 372.39125pt>
+<inc/img/rsl_oleg.png, id=851, 921.4425pt x 372.39125pt>
 File: inc/img/rsl_oleg.png Graphic file (type png)
 <use inc/img/rsl_oleg.png>
 Package pdftex.def Info: inc/img/rsl_oleg.png  used on input line 55.
 (pdftex.def)             Requested size: 435.32422pt x 175.92738pt.
-<inc/img/rsl_hse.png, id=845, 921.4425pt x 372.39125pt>
+<inc/img/rsl_hse.png, id=852, 921.4425pt x 372.39125pt>
 File: inc/img/rsl_hse.png Graphic file (type png)
 <use inc/img/rsl_hse.png>
 Package pdftex.def Info: inc/img/rsl_hse.png  used on input line 62.
@@ -1913,21 +1913,21 @@ Package pdftex.def Info: inc/img/rsl_hse.png  used on input line 62.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [56 <./inc/img/asl.png> <./inc/img/rsl_oleg.png>]
-<inc/img/preprocessing/bad_orig.jpg, id=859, 301.125pt x 301.125pt>
+<inc/img/preprocessing/bad_orig.jpg, id=867, 301.125pt x 301.125pt>
 File: inc/img/preprocessing/bad_orig.jpg Graphic file (type jpg)
 <use inc/img/preprocessing/bad_orig.jpg>
 Package pdftex.def Info: inc/img/preprocessing/bad_orig.jpg  used on input line
  71.
 (pdftex.def)             Requested size: 118.50705pt x 118.50885pt.
-<inc/img/preprocessing/bad_res.jpg, id=860, 301.125pt x 301.125pt>
+<inc/img/preprocessing/bad_res.jpg, id=868, 301.125pt x 301.125pt>
 File: inc/img/preprocessing/bad_res.jpg Graphic file (type jpg)
 <use inc/img/preprocessing/bad_res.jpg>
 Package pdftex.def Info: inc/img/preprocessing/bad_res.jpg  used on input line 
 75.
 (pdftex.def)             Requested size: 118.50705pt x 118.50885pt.
- [57 <./inc/img/rsl_hse.png> <./inc/img/preprocessing/bad_orig.jpg> <./inc/img/
-preprocessing/bad_res.jpg>]
-<inc/img/compare.png, id=871, 935.495pt x 372.39125pt>
+ [57 <./inc/img/rsl_hse.png> <./inc/img/preprocessing/bad_orig.JPG> <./inc/img/
+preprocessing/bad_res.JPG>]
+<inc/img/compare.png, id=878, 935.495pt x 372.39125pt>
 File: inc/img/compare.png Graphic file (type png)
 <use inc/img/compare.png>
 Package pdftex.def Info: inc/img/compare.png  used on input line 91.
@@ -1972,27 +1972,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--110
 (/usr/local/texlive/2020/texmf-dist/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 )
-Underfull \hbox (badness 6396) in paragraph at lines 151--157
+Underfull \hbox (badness 6396) in paragraph at lines 157--163
 []\T2A/cmr/m/n/14.4 Sign Lan^^?guage Recog^^?ni^^?tion Us^^?ing Con^^?vo^^?lu^^
 ?tion^^?al Neu^^?ral Net^^?
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 151--157
+Underfull \hbox (badness 1270) in paragraph at lines 157--163
 \T2A/cmr/m/n/14.4 works / Li^^?onel Pigou, Sander Diele^^?man, Pieter-^^?Jan Ki
 n^^?der^^?mans, Ben^^?
  []
 
 [61])) [62]
+\openout2 = `90-appendix1.aux'.
+
+ (./90-appendix1.tex
+Underfull \hbox (badness 4096) in paragraph at lines 4--5
+\T2A/cmr/m/n/14.4 Â^^?ÔÛ^^?Â^^?ÔÛÂ ïôû^^?âà^^?ôû^^?âà^^?ÔÛ^^?À^^?ÔÀ ÔÛ^^?Â^^?ÔÛ
+^^?Â^^?ÔÛÂ ïôû^^?âà^^?ôû^^?âà^^?ÔÛ^^?À^^?ÔÀ
+ []
+
+) [63
+
+
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
- (./rpz.aux (./00-abstract.aux) (./10-defines.aux) (./11-abbrev.aux) (./12-intr
-o.aux) (./20-analysis.aux) (./30-design.aux) (./40-impl.aux)
-(./50-research.aux) (./80-conclusion.aux) (./81-biblio.aux))
+ (./rpz.aux (./00-abstract.aux) (./10-defines.aux) (./11-abbrev.aux)
+(./12-intro.aux) (./20-analysis.aux) (./30-design.aux) (./40-impl.aux)
+(./50-research.aux) (./80-conclusion.aux) (./81-biblio.aux) (./90-appendix1.aux
+))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `rpz.out' has not changed.
-(rerunfilecheck)             Checksum: A3D4F76542423601646666FD4EF8FB12;11244.
+(rerunfilecheck)             Checksum: B00C17BB36159D5746A90FBF699936A9;11386.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2000,10 +2014,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
- 30777 strings out of 480608
- 518528 string characters out of 5903631
- 982805 words of memory out of 5000000
- 45687 multiletter control sequences out of 15000+600000
+ 30792 strings out of 480607
+ 518748 string characters out of 5903581
+ 983483 words of memory out of 5000000
+ 45694 multiletter control sequences out of 15000+600000
  542608 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,18n,87p,3000b,1952s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2026,10 +2040,10 @@ e/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2020/t
 exmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on rpz.pdf (62 pages, 3746163 bytes).
+Output written on rpz.pdf (63 pages, 3747445 bytes).
 PDF statistics:
- 1019 PDF objects out of 1200 (max. 8388607)
- 835 compressed objects within 9 object streams
- 268 named destinations out of 1000 (max. 500000)
- 652 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1030 PDF objects out of 1200 (max. 8388607)
+ 845 compressed objects within 9 object streams
+ 270 named destinations out of 1000 (max. 500000)
+ 660 words of extra memory for PDF output out of 10000 (max. 10000000)
 
