@@ -1,7 +1,54 @@
 \chapter{ПРИЛОЖЕНИЕ А}
 \label{cha:appendix1}
 
-пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ пфывафываФЫАФА ФЫВФЫВФЫВ 
+\begin{minipage}{0,8\textwidth}
+	\begin{algorithm}[H]
+		\lstinputlisting[language=Python]{inc/apendix/detector.py}
+		\caption{Исходный код предобработки изображения}
+		\label{app:detector}
+	\end{algorithm}
+\end{minipage}
+
+\begin{minipage}{0.8\textwidth}
+	\begin{algorithm}[H]
+		\lstinputlisting[language=Python]{inc/src/model.py}
+		\caption{Исходный код инициализации модели}
+		\label{imp:init-model}
+	\end{algorithm}
+\end{minipage}
+
+\begin{minipage}{0.8\textwidth}
+	\begin{algorithm}[H]
+		\lstinputlisting[language=Python]{inc/src/prim.py}
+		\caption{Исходный код инициализации первого капсульного слоя}
+		\label{imp:prim}
+	\end{algorithm}
+\end{minipage}
+
+\begin{minipage}{0.8\textwidth}
+	\begin{algorithm}[H]
+		\lstinputlisting[language=Python]{inc/src/digit.py}
+		\caption{Исходный код реализации динамической маршрутизации}
+		\label{imp:digit}
+	\end{algorithm}
+\end{minipage}
+
+\begin{minipage}{0,8\textwidth}
+	\begin{algorithm}[H]
+		\lstinputlisting[language=Python]{inc/apendix/squash.py}
+		\caption{Исходный код реализации формулы \ref{eq:caps-sum}}
+		\label{app:squash}
+	\end{algorithm}
+\end{minipage}
+
+
+\begin{minipage}{0,8\textwidth}
+	\begin{algorithm}[H]
+		\lstinputlisting[language=Python]{inc/apendix/length.py}
+		\caption{Исходный код реализации получения выходных значений КНС}
+		\label{app:length}
+	\end{algorithm}
+\end{minipage}
 
 %%% Local Variables: 
 %%% mode: latex

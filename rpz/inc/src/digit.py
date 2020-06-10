@@ -1,9 +1,7 @@
-from keras import initializers
 import tensorflow as tf
 import keras.backend as K
-
 class CapsuleLayer(layers.Layer):
-  def call(self, inputs, training=None):
+  def call(self, inputs):
     inputs_expand = K.expand_dims(K.expand_dims(inputs, 2), 2)
     inputs_tiled = K.tile(inputs_expand, [1, 1, self.num_capsule, 1, 1])
     inputs_hat = tf.scan(lambda ac, x: K.batch_dot(x, self.W, [3, 2]), elems=inputs_tiled, initializer=K.zeros([self.input_num_capsule, self.num_capsule, 1, self.dim_vector]))

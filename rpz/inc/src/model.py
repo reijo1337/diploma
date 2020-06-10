@@ -1,5 +1,4 @@
 from keras import layers, models
-
 def CapsNet(input_shape, n_class, num_routing):
     x = layers.Input(shape=input_shape, name="image")
     conv5 = layers.Conv2D(filters=256, kernel_size=9, strides=1, padding='valid', activation='relu', name='conv')(x)
